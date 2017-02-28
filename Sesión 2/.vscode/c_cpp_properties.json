@@ -5,7 +5,7 @@
             "includePath": [
                 "/usr/include",
                 "/usr/local/include",
-                "/Users/Roberto/Documents/School/Universidad/Año 1/Q2/PRO2/pro2"
+                "/Users/Roberto/Documents/School/Universidad/Año 1/Q2/PRO2/pro2/inclusions"
             ],
             "browse": {
                 "limitSymbolsToIncludedHeaders": true,
@@ -17,7 +17,7 @@
             "includePath": [
                 "/usr/include",
                 "/usr/local/include",
-                "/Users/Roberto/Documents/School/Universidad/Año 1/Q2/PRO2/pro2"
+                "/Users/Roberto/Documents/School/Universidad/Año 1/Q2/PRO2/pro2/inclusions"
             ],
             "browse": {
                 "limitSymbolsToIncludedHeaders": true,
