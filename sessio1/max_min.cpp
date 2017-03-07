@@ -43,5 +43,5 @@ int main() {
   max_min(v,max,min);
   
   // Print
-  cout << "max: " << max << ' ' << ", min: " << min << endl;
+  cout << max << ' ' << min << endl;
 }
