@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "622C275E1E6EF6A9002D8098"
-               BuildableName = "sesion3"
-               BlueprintName = "sesion3"
+               BlueprintIdentifier = "622C27951E6EFE0E002D8098"
+               BuildableName = "sesion1"
+               BlueprintName = "sesion1"
                ReferencedContainer = "container:sesion3.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -32,9 +32,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "622C275E1E6EF6A9002D8098"
-            BuildableName = "sesion3"
-            BlueprintName = "sesion3"
+            BlueprintIdentifier = "622C27951E6EFE0E002D8098"
+            BuildableName = "sesion1"
+            BlueprintName = "sesion1"
             ReferencedContainer = "container:sesion3.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -55,9 +55,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "622C275E1E6EF6A9002D8098"
-            BuildableName = "sesion3"
-            BlueprintName = "sesion3"
+            BlueprintIdentifier = "622C27951E6EFE0E002D8098"
+            BuildableName = "sesion1"
+            BlueprintName = "sesion1"
             ReferencedContainer = "container:sesion3.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -74,9 +74,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "622C275E1E6EF6A9002D8098"
-            BuildableName = "sesion3"
-            BlueprintName = "sesion3"
+            BlueprintIdentifier = "622C27951E6EFE0E002D8098"
+            BuildableName = "sesion1"
+            BlueprintName = "sesion1"
             ReferencedContainer = "container:sesion3.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

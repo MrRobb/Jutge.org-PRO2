@@ -14,12 +14,12 @@ class Estudiant {
 private:
   int dni;
   double nota;
+  bool amb_nota;
   static const int MAX_NOTA = 10;
   /*
     Invariant de la representacio:
     - 0 <= dni
-    - si té nota, llavors 0 <= nota <= MAX_NOTA
-    - si no té nota, llavors nota = -1
+    - si amb_nota, llavors 0 <= nota <= MAX_NOTA
   */
     
 public:

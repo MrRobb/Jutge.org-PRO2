@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>sesion1.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>sesion3.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -13,6 +18,11 @@
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>622C275E1E6EF6A9002D8098</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>622C27951E6EFE0E002D8098</key>
 		<dict>
 			<key>primary</key>
 			<true/>
