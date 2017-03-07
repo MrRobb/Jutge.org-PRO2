@@ -1,0 +1,69 @@
+class Palabra{
+
+// Tipo de módulo: datos 
+// Descripción del tipo: una secuencia indexada y acotada de caracteres, 
+// escogidos entre a..z, A..Z y 0..9.  El resto se consideran separadores. 
+
+// Las operaciones de lectura requieren un parámetro que se usará para 
+// distinguir un separador especial, que sirva por ejemplo para marcar el final
+// de un texto. Dicho separador especial puede ser cualquier caracter ASCII 
+// del rango 0-127, "visible" y distinto de "a".."z", "A".."Z" y "0".."9", 
+// como "$", "." o "+" (pero no el blanco, el salto de línea o el tabulador, 
+// por no ser visibles, o "ç", "ñ", etc., por no ser del rango 0-127).
+
+private:
+
+public:
+
+  // Constructoras
+
+  Palabra ();
+  /* Pre: cert */ 
+  /* Post: el resultado es una palabra sin caracteres y longitud 0 */
+ 
+  // Modificadoras 
+
+  void anadir_letra (char c);
+  /* Pre: c no es un separador; la longitud del parametro implícito es menor 
+     que la máxima permitida */
+  /* Post: El parametro implícito queda como el original pero con c añadido 
+     al final */
+
+  // Consultoras
+
+  static int longitud_maxima ();
+  /* Pre: cierto */ 
+  /* Post: El resultado es la longitud máxima permitida para la clase */
+ 
+  int long_pal () const;
+  /* Pre: cierto */ 
+  /* Post: El resultado es la longitud del parámetro implícito */
+ 
+  static bool es_separador (char c);  
+  /* Pre: cierto */ 
+  /* Post: El resultado indica si c es un separador para la clase (c no puede 
+     formar parte de una palabra) */
+
+  char consultar_letra (int i) const;
+  /* Pre: i está entre 1 y la longitud del parametro implícito */ 
+  /* Post: El resultado es el caracter i-ésimo del parametro implícito */
+
+   bool iguales (const Palabra & p) const;
+  /* Pre: cierto */
+  /* Post: El resultado indica si p es igual al parametro implícito */
+
+  // Lectura y escritura
+ 
+  void leer (char marca);
+  /* Pre: En el canal standard de entrada hay uno o más caracteres a..z A..Z 
+     0..9 o "marca"; "marca" es un separador visible del rango (0-127) */
+  /* Post: El parámetro implícito contiene el primer grupo de caracteres 
+     válidos leídos del canal standard de entrada, hasta el primer separador 
+     posterior a éstos; si antes del primer carácter válido aparece "marca", 
+     se obtiene una palabra de longitud cero. */
+
+  void escribir () const;
+  /* Pre: cierto */
+  /* Post: Se han escrito los caracteres del parámetro implícito en el canal
+     standard de salida */
+};

@@ -1,0 +1,80 @@
+Salida comentada:
+
+Escriu la mida del conjunt i els elements // esta línea la escribe llegir_cjt_estudiants
+111 NP                                    // primer -5
+222 2.22
+444 4.44
+
+el estudiante 111 no tiene nota           // primer -2 111 
+
+111 1.11                                  // segundo -5
+222 2.22
+444 4.44
+
+el estudiante 111 tiene nota 1.11         // segundo -2 111
+
+el estudiante 555 no está                 // -2 555
+
+el estudiante 111 ya estaba               // -1 111 4 no cumple la pre de afegir
+
+el estudiante 555 no está                 // -3 555 5 no cumple la pre de modificar
+
+111 1.11                                  // tercer -5
+222 2.22
+444 4.44
+
+111 1.1                                   // cuarto -5, después de redondear (-4)
+222 2.2
+444 4.4
+
+111 1.1                                   // quinto -5, despues de -1 777 777 
+222 2.2
+444 4.4
+777 NP
+
+111 1.1                                   // sexto -5
+222 2.2
+333 3.3
+444 4.4
+777 NP
+
+Salida sin comentar:
+
+Escriu la mida del conjunt i els elements 
+111 NP
+222 2.22
+444 4.44
+
+el estudiante 111 no tiene nota
+
+111 1.11
+222 2.22
+444 4.44
+
+el estudiante 111 tiene nota 1.11
+
+el estudiante 555 no está
+
+el estudiante 111 ya estaba
+
+el estudiante 555 no está
+
+111 1.11
+222 2.22
+444 4.44
+
+111 1.1
+222 2.2
+444 4.4
+
+111 1.1
+222 2.2
+444 4.4
+777 NP
+
+111 1.1
+222 2.2
+333 3.3
+444 4.4
+777 NP
+

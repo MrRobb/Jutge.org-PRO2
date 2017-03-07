@@ -1,0 +1,242 @@
+\hypertarget{class_cjt__estudiants}{\section{Referència de la Classe Cjt\+\_\+estudiants}
+\label{class_cjt__estudiants}\index{Cjt\+\_\+estudiants@{Cjt\+\_\+estudiants}}
+}
+
+
+Representa un conjunt d'estudiants ordenat per D\+N\+I. Es poden consultar i modificar els seus elements (de tipus \hyperlink{class_estudiant}{Estudiant}) donat un estudiant concret o per posicio a l'ordre.  
+
+
+\subsection*{Mètodes públics}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_cjt__estudiants_a31ffe72cadcf58d82c8b9f6659c56e7a}{Cjt\+\_\+estudiants} ()
+\begin{DoxyCompactList}\small\item\em Creadora per defecte. \end{DoxyCompactList}\item 
+void \hyperlink{class_cjt__estudiants_a8724107ebfbe917c45906f7e6d510867}{afegir\+\_\+estudiant} (const \hyperlink{class_estudiant}{Estudiant} \&est)
+\begin{DoxyCompactList}\small\item\em Afegeix un estudiant a un conjunt. \end{DoxyCompactList}\item 
+void \hyperlink{class_cjt__estudiants_ae5b64b1e3ea3587e00a32e6fbeae2e7c}{modificar\+\_\+estudiant} (const \hyperlink{class_estudiant}{Estudiant} \&est)
+\begin{DoxyCompactList}\small\item\em Modifica un estudiant dins d'un conjunt. \end{DoxyCompactList}\item 
+void \hyperlink{class_cjt__estudiants_a18590359c8f8537aa38711febf6c8bbf}{modificar\+\_\+iessim} (int i, const \hyperlink{class_estudiant}{Estudiant} \&est)
+\begin{DoxyCompactList}\small\item\em Modifica l'i-\/esim estudiant dins d'un conjunt. \end{DoxyCompactList}\item 
+int \hyperlink{class_cjt__estudiants_a8b25d97f6e061b2986e18c67a0d49f73}{mida} () const 
+\begin{DoxyCompactList}\small\item\em Consulta la mida d'un conjunt d'estudiants. \end{DoxyCompactList}\item 
+bool \hyperlink{class_cjt__estudiants_ada47d1e52a6910bb0b1ce21090f8c855}{existeix\+\_\+estudiant} (int dni) const 
+\begin{DoxyCompactList}\small\item\em Cerca d'un estudiant a un conjunt. \end{DoxyCompactList}\item 
+\hyperlink{class_estudiant}{Estudiant} \hyperlink{class_cjt__estudiants_a90a7bb740b5b14c1038cdfe4b3468674}{consultar\+\_\+estudiant} (int dni) const 
+\begin{DoxyCompactList}\small\item\em Consulta d'un estudiant a un conjunt. \end{DoxyCompactList}\item 
+\hyperlink{class_estudiant}{Estudiant} \hyperlink{class_cjt__estudiants_a1c598f56d048d036df3ba0afd6fc5ea9}{consultar\+\_\+iessim} (int i) const 
+\begin{DoxyCompactList}\small\item\em Consulta de l'estudiant i-\/esim d'un conjunt. \end{DoxyCompactList}\item 
+void \hyperlink{class_cjt__estudiants_aa24c2d4c36167b2b810ab459435b67a8}{llegir} ()
+\begin{DoxyCompactList}\small\item\em Operacio de lectura. \end{DoxyCompactList}\item 
+void \hyperlink{class_cjt__estudiants_a80ca07a3078ae102740a1f1a152ed0a1}{escriure} () const 
+\begin{DoxyCompactList}\small\item\em Operacio d'escriptura. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Mètodes Públics Estàtics}
+\begin{DoxyCompactItemize}
+\item 
+static int \hyperlink{class_cjt__estudiants_a171fdff58b408ccbf647ab594b5eafa4}{mida\+\_\+maxima} ()
+\begin{DoxyCompactList}\small\item\em Consulta de la mida maxima de la classe \hyperlink{class_cjt__estudiants}{Cjt\+\_\+estudiants}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descripció Detallada}
+Representa un conjunt d'estudiants ordenat per D\+N\+I. Es poden consultar i modificar els seus elements (de tipus \hyperlink{class_estudiant}{Estudiant}) donat un estudiant concret o per posicio a l'ordre. 
+
+Definició a la línia 21 del fitxer Cjt\+\_\+estudiants.\+hh.
+
+
+
+\subsection{Documentació del Constructor i el Destructor}
+\hypertarget{class_cjt__estudiants_a31ffe72cadcf58d82c8b9f6659c56e7a}{\index{Cjt\+\_\+estudiants@{Cjt\+\_\+estudiants}!Cjt\+\_\+estudiants@{Cjt\+\_\+estudiants}}
+\index{Cjt\+\_\+estudiants@{Cjt\+\_\+estudiants}!Cjt\+\_\+estudiants@{Cjt\+\_\+estudiants}}
+\subsubsection[{Cjt\+\_\+estudiants}]{\setlength{\rightskip}{0pt plus 5cm}Cjt\+\_\+estudiants\+::\+Cjt\+\_\+estudiants (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_cjt__estudiants_a31ffe72cadcf58d82c8b9f6659c56e7a}
+
+
+Creadora per defecte. 
+
+S'executa automaticament al declarar \hyperlink{class_cjt__estudiants}{Cjt\+\_\+estudiants} c; \begin{DoxyPrecond}{Precondició}
+cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+el resultat es un conjunt d'estudiants buit 
+\end{DoxyPostcond}
+
+
+\subsection{Documentació de les Funcions Membre}
+\hypertarget{class_cjt__estudiants_a8724107ebfbe917c45906f7e6d510867}{\index{Cjt\+\_\+estudiants@{Cjt\+\_\+estudiants}!afegir\+\_\+estudiant@{afegir\+\_\+estudiant}}
+\index{afegir\+\_\+estudiant@{afegir\+\_\+estudiant}!Cjt\+\_\+estudiants@{Cjt\+\_\+estudiants}}
+\subsubsection[{afegir\+\_\+estudiant}]{\setlength{\rightskip}{0pt plus 5cm}void Cjt\+\_\+estudiants\+::afegir\+\_\+estudiant (
+\begin{DoxyParamCaption}
+\item[{const {\bf Estudiant} \&}]{est}
+\end{DoxyParamCaption}
+)}}\label{class_cjt__estudiants_a8724107ebfbe917c45906f7e6d510867}
+
+
+Afegeix un estudiant a un conjunt. 
+
+\begin{DoxyPrecond}{Precondició}
+el parametre implicit no conte cap estudiant amb el D\+N\+I d'est; el nombre d'estudiants del p.\+i. es mes petit que la mida maxima permesa 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+s'ha afegit l'estudiant est al parametre implicit 
+\end{DoxyPostcond}
+\hypertarget{class_cjt__estudiants_ae5b64b1e3ea3587e00a32e6fbeae2e7c}{\index{Cjt\+\_\+estudiants@{Cjt\+\_\+estudiants}!modificar\+\_\+estudiant@{modificar\+\_\+estudiant}}
+\index{modificar\+\_\+estudiant@{modificar\+\_\+estudiant}!Cjt\+\_\+estudiants@{Cjt\+\_\+estudiants}}
+\subsubsection[{modificar\+\_\+estudiant}]{\setlength{\rightskip}{0pt plus 5cm}void Cjt\+\_\+estudiants\+::modificar\+\_\+estudiant (
+\begin{DoxyParamCaption}
+\item[{const {\bf Estudiant} \&}]{est}
+\end{DoxyParamCaption}
+)}}\label{class_cjt__estudiants_ae5b64b1e3ea3587e00a32e6fbeae2e7c}
+
+
+Modifica un estudiant dins d'un conjunt. 
+
+\begin{DoxyPrecond}{Precondició}
+existeix un estudiant al parametre implicit amb el D\+N\+I d'est 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+l'estudiant del parametre implicit original amb el dni d'est, ha quedat substituit per est 
+\end{DoxyPostcond}
+\hypertarget{class_cjt__estudiants_a18590359c8f8537aa38711febf6c8bbf}{\index{Cjt\+\_\+estudiants@{Cjt\+\_\+estudiants}!modificar\+\_\+iessim@{modificar\+\_\+iessim}}
+\index{modificar\+\_\+iessim@{modificar\+\_\+iessim}!Cjt\+\_\+estudiants@{Cjt\+\_\+estudiants}}
+\subsubsection[{modificar\+\_\+iessim}]{\setlength{\rightskip}{0pt plus 5cm}void Cjt\+\_\+estudiants\+::modificar\+\_\+iessim (
+\begin{DoxyParamCaption}
+\item[{int}]{i, }
+\item[{const {\bf Estudiant} \&}]{est}
+\end{DoxyParamCaption}
+)}}\label{class_cjt__estudiants_a18590359c8f8537aa38711febf6c8bbf}
+
+
+Modifica l'i-\/esim estudiant dins d'un conjunt. 
+
+\begin{DoxyPrecond}{Precondició}
+1 $<$= i $<$= \hyperlink{class_cjt__estudiants_a8b25d97f6e061b2986e18c67a0d49f73}{mida()}, l'element i-\/esim del conjunt en ordre creixent per D\+N\+I conte un estudiant amb el mateix D\+N\+I que est 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+l'estudiant est ha substituit l'estudiant i-\/esim del parametre implicit 
+\end{DoxyPostcond}
+\hypertarget{class_cjt__estudiants_a8b25d97f6e061b2986e18c67a0d49f73}{\index{Cjt\+\_\+estudiants@{Cjt\+\_\+estudiants}!mida@{mida}}
+\index{mida@{mida}!Cjt\+\_\+estudiants@{Cjt\+\_\+estudiants}}
+\subsubsection[{mida}]{\setlength{\rightskip}{0pt plus 5cm}int Cjt\+\_\+estudiants\+::mida (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_cjt__estudiants_a8b25d97f6e061b2986e18c67a0d49f73}
+
+
+Consulta la mida d'un conjunt d'estudiants. 
+
+\begin{DoxyPrecond}{Precondició}
+cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+el resultat es la mida del parametre implicit 
+\end{DoxyPostcond}
+\hypertarget{class_cjt__estudiants_a171fdff58b408ccbf647ab594b5eafa4}{\index{Cjt\+\_\+estudiants@{Cjt\+\_\+estudiants}!mida\+\_\+maxima@{mida\+\_\+maxima}}
+\index{mida\+\_\+maxima@{mida\+\_\+maxima}!Cjt\+\_\+estudiants@{Cjt\+\_\+estudiants}}
+\subsubsection[{mida\+\_\+maxima}]{\setlength{\rightskip}{0pt plus 5cm}static int Cjt\+\_\+estudiants\+::mida\+\_\+maxima (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_cjt__estudiants_a171fdff58b408ccbf647ab594b5eafa4}
+
+
+Consulta de la mida maxima de la classe \hyperlink{class_cjt__estudiants}{Cjt\+\_\+estudiants}. 
+
+\begin{DoxyPrecond}{Precondició}
+cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+el resultat es la mida maxima dels elements de la classe 
+\end{DoxyPostcond}
+\hypertarget{class_cjt__estudiants_ada47d1e52a6910bb0b1ce21090f8c855}{\index{Cjt\+\_\+estudiants@{Cjt\+\_\+estudiants}!existeix\+\_\+estudiant@{existeix\+\_\+estudiant}}
+\index{existeix\+\_\+estudiant@{existeix\+\_\+estudiant}!Cjt\+\_\+estudiants@{Cjt\+\_\+estudiants}}
+\subsubsection[{existeix\+\_\+estudiant}]{\setlength{\rightskip}{0pt plus 5cm}bool Cjt\+\_\+estudiants\+::existeix\+\_\+estudiant (
+\begin{DoxyParamCaption}
+\item[{int}]{dni}
+\end{DoxyParamCaption}
+) const}}\label{class_cjt__estudiants_ada47d1e52a6910bb0b1ce21090f8c855}
+
+
+Cerca d'un estudiant a un conjunt. 
+
+\begin{DoxyPrecond}{Precondició}
+dni $>$= 0 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+el resultat indica si existeix un estudiant al parametre implicit amb D\+N\+I = dni 
+\end{DoxyPostcond}
+\hypertarget{class_cjt__estudiants_a90a7bb740b5b14c1038cdfe4b3468674}{\index{Cjt\+\_\+estudiants@{Cjt\+\_\+estudiants}!consultar\+\_\+estudiant@{consultar\+\_\+estudiant}}
+\index{consultar\+\_\+estudiant@{consultar\+\_\+estudiant}!Cjt\+\_\+estudiants@{Cjt\+\_\+estudiants}}
+\subsubsection[{consultar\+\_\+estudiant}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Estudiant} Cjt\+\_\+estudiants\+::consultar\+\_\+estudiant (
+\begin{DoxyParamCaption}
+\item[{int}]{dni}
+\end{DoxyParamCaption}
+) const}}\label{class_cjt__estudiants_a90a7bb740b5b14c1038cdfe4b3468674}
+
+
+Consulta d'un estudiant a un conjunt. 
+
+\begin{DoxyPrecond}{Precondició}
+existeix un estudiant al parametre implicit amb D\+N\+I = dni 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+el resultat es l'estudiant amb D\+N\+I = dni que conte el parametre implicit 
+\end{DoxyPostcond}
+\hypertarget{class_cjt__estudiants_a1c598f56d048d036df3ba0afd6fc5ea9}{\index{Cjt\+\_\+estudiants@{Cjt\+\_\+estudiants}!consultar\+\_\+iessim@{consultar\+\_\+iessim}}
+\index{consultar\+\_\+iessim@{consultar\+\_\+iessim}!Cjt\+\_\+estudiants@{Cjt\+\_\+estudiants}}
+\subsubsection[{consultar\+\_\+iessim}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Estudiant} Cjt\+\_\+estudiants\+::consultar\+\_\+iessim (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+) const}}\label{class_cjt__estudiants_a1c598f56d048d036df3ba0afd6fc5ea9}
+
+
+Consulta de l'estudiant i-\/esim d'un conjunt. 
+
+\begin{DoxyPrecond}{Precondició}
+1 $<$= i $<$= \hyperlink{class_cjt__estudiants_a8b25d97f6e061b2986e18c67a0d49f73}{mida()} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+el resultat es l'estudiant i-\/essim del parametre implicit en ordre creixent per D\+N\+I 
+\end{DoxyPostcond}
+\hypertarget{class_cjt__estudiants_aa24c2d4c36167b2b810ab459435b67a8}{\index{Cjt\+\_\+estudiants@{Cjt\+\_\+estudiants}!llegir@{llegir}}
+\index{llegir@{llegir}!Cjt\+\_\+estudiants@{Cjt\+\_\+estudiants}}
+\subsubsection[{llegir}]{\setlength{\rightskip}{0pt plus 5cm}void Cjt\+\_\+estudiants\+::llegir (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_cjt__estudiants_aa24c2d4c36167b2b810ab459435b67a8}
+
+
+Operacio de lectura. 
+
+\begin{DoxyPrecond}{Precondició}
+estan preparats al canal estandard d'entrada un enter (entre 0 i la mida maxima permesa per a la classe), que representa el nombre d'elements que llegirem, i les dades de tal nombre d'estudiants diferents 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+el parametre implicit conte el conjunt d'estudiants llegits del canal estandard d'entrada 
+\end{DoxyPostcond}
+\hypertarget{class_cjt__estudiants_a80ca07a3078ae102740a1f1a152ed0a1}{\index{Cjt\+\_\+estudiants@{Cjt\+\_\+estudiants}!escriure@{escriure}}
+\index{escriure@{escriure}!Cjt\+\_\+estudiants@{Cjt\+\_\+estudiants}}
+\subsubsection[{escriure}]{\setlength{\rightskip}{0pt plus 5cm}void Cjt\+\_\+estudiants\+::escriure (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_cjt__estudiants_a80ca07a3078ae102740a1f1a152ed0a1}
+
+
+Operacio d'escriptura. 
+
+\begin{DoxyPrecond}{Precondició}
+cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+s'han escrit pel canal estandard de sortida els estudiants del parametre implicit en ordre ascendent per D\+N\+I 
+\end{DoxyPostcond}
+
+
+La documentació d'aquesta classe es va generar a partir del següent fitxer\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_cjt__estudiants_8hh}{Cjt\+\_\+estudiants.\+hh}\end{DoxyCompactItemize}

@@ -1,0 +1,9 @@
+Las actividades de introducción al doxygen se llevan a cabo en las
+sesiones 8 y 10. Los materiales necesarios están integrados en dichas
+sesiones.
+
+En la sesión 8 se emplea el doxygen para documentar programas
+principales y especificaciones de clases.
+
+En la sesión 10 se emplea el doxygen para documentar proyectos
+completos, incluyendo implementaciones de clases.

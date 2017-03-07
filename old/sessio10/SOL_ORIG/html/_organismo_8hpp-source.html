@@ -1,0 +1,98 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>Caso de estudio: experimentos inmunologicos. Laboratorio de PRO2.: Fichero Fuente Organismo.hpp</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Generado por Doxygen 1.5.6 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="index.html"><span>Página&nbsp;principal</span></a></li>
+      <li><a href="annotated.html"><span>Clases</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+    <li>
+      <form action="search.php" method="get">
+        <table cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <td><label>&nbsp;Buscar&nbsp;</label></td>
+            <td><input type="text" name="query" value="" size="20" accesskey="s"/></td>
+          </tr>
+        </table>
+      </form>
+    </li>
+    </ul>
+  </div>
+<h1>Organismo.hpp</h1><a href="_organismo_8hpp.html">Ir a la documentación de este archivo.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 
+<a name="l00005"></a>00005 <span class="preprocessor">#ifndef _ORGANISMO_</span>
+<a name="l00006"></a>00006 <span class="preprocessor"></span><span class="preprocessor">#define _ORGANISMO_</span>
+<a name="l00007"></a>00007 <span class="preprocessor"></span>
+<a name="l00008"></a>00008 <span class="preprocessor">#include "<a class="code" href="_celula_8hpp.html" title="Especificación de la clase Celula.">Celula.hpp</a>"</span>
+<a name="l00009"></a>00009 <span class="comment">//#include "Arbre.hpp"</span>
+<a name="l00010"></a>00010 
+<a name="l00011"></a>00011 <span class="comment">/*</span>
+<a name="l00012"></a>00012 <span class="comment"> * Clase Organismo</span>
+<a name="l00013"></a>00013 <span class="comment"> */</span>
+<a name="l00014"></a>00014 
+<a name="l00021"></a><a class="code" href="class_organismo.html">00021</a> <span class="keyword">class </span><a class="code" href="class_organismo.html" title="Representa la información y las operaciones asociadas a un organismo.">Organismo</a> {
+<a name="l00022"></a>00022 
+<a name="l00023"></a>00023   <span class="comment">// Descripción: contiene la estructura celular y las operaciones de un organismo</span>
+<a name="l00024"></a>00024 
+<a name="l00025"></a>00025 <span class="keyword">private</span>:
+<a name="l00026"></a>00026 
+<a name="l00027"></a>00027   <span class="comment">/* Un Organismo se representa mediante sus estructura celular, que tendrá</span>
+<a name="l00028"></a>00028 <span class="comment">     forma arborescente, su identificador, su condición o no de maligno y su </span>
+<a name="l00029"></a>00029 <span class="comment">     número de víctimas. */</span>
+<a name="l00030"></a>00030 
+<a name="l00032"></a><a class="code" href="class_organismo.html#bfafb8e55144e295b406ce90951f0c68">00032</a>   Arbre&lt;Celula&gt; <a class="code" href="class_organismo.html#bfafb8e55144e295b406ce90951f0c68" title="Estructura celular del organismo.">celulas</a>; <span class="comment">// </span>
+<a name="l00034"></a><a class="code" href="class_organismo.html#30be1823d3711fec651a5a4b1dc1cee5">00034</a> <span class="comment"></span>  <span class="keywordtype">int</span> <a class="code" href="class_organismo.html#30be1823d3711fec651a5a4b1dc1cee5" title="Identificador del organismo.">id</a>; 
+<a name="l00036"></a><a class="code" href="class_organismo.html#85a5d1b9d31fa209d1ed0d596dbbed61">00036</a>   <span class="keywordtype">bool</span> <a class="code" href="class_organismo.html#85a5d1b9d31fa209d1ed0d596dbbed61" title="Indica si es maligno (true) o defensivo (false).">maligno</a>; <span class="comment">// </span>
+<a name="l00038"></a><a class="code" href="class_organismo.html#bb3e56487a080df544a6ff96e5e42520">00038</a> <span class="comment"></span>  <span class="keywordtype">int</span> <a class="code" href="class_organismo.html#bb3e56487a080df544a6ff96e5e42520" title="Número de víctimas del organismo.">victimas</a>; 
+<a name="l00039"></a>00039 
+<a name="l00040"></a>00040 <span class="keyword">public</span>:
+<a name="l00041"></a>00041 
+<a name="l00042"></a>00042   <span class="comment">// Constructora</span>
+<a name="l00047"></a>00047 <span class="comment"></span>  <a class="code" href="class_organismo.html#a5dbeed205b53c0e555ef2a6456da144" title="Creadora por defecto.">Organismo</a>(); 
+<a name="l00048"></a>00048 
+<a name="l00049"></a>00049   <span class="comment">// Destructora</span>
+<a name="l00052"></a>00052 <span class="comment"></span>  <a class="code" href="class_organismo.html#d1ba743e609a358f1479ebf341220747" title="Destructora por defecto.">~Organismo</a>(); 
+<a name="l00053"></a>00053 
+<a name="l00054"></a>00054   <span class="comment">// Modificadoras</span>
+<a name="l00055"></a>00055 
+<a name="l00060"></a>00060   <span class="keywordtype">void</span> <a class="code" href="class_organismo.html#4fa50ea637c25ee2b04bd1805ec634dc" title="Modificadora del identificador.">anadir_id</a>(<span class="keywordtype">int</span> <span class="keywordtype">id</span>);
+<a name="l00061"></a>00061 
+<a name="l00066"></a>00066   <span class="keywordtype">void</span> <a class="code" href="class_organismo.html#e498385e40b42c4e9b11226befd6e4c6" title="Modificadora del número de víctimas.">incrementar_victimas</a>();
+<a name="l00067"></a>00067 
+<a name="l00068"></a>00068   <span class="comment">// Consultoras</span>
+<a name="l00069"></a>00069 
+<a name="l00078"></a>00078   <span class="keywordtype">int</span> <a class="code" href="class_organismo.html#2f4573f69288fa8ec05ec709f2336a8d" title="Consultora del resultado de la lucha entre dos organismos.">lucha_organismos</a>(<span class="keyword">const</span> <a class="code" href="class_organismo.html" title="Representa la información y las operaciones asociadas a un organismo.">Organismo</a> &amp;o2) <span class="keyword">const</span>;
+<a name="l00079"></a>00079 
+<a name="l00085"></a>00085   <span class="keywordtype">bool</span> <a class="code" href="class_organismo.html#a746619493d11ed0b2eb2c75ce202ad0" title="Consultora de la malignidad del organismo.">es_maligno</a>() <span class="keyword">const</span>;
+<a name="l00086"></a>00086 
+<a name="l00091"></a>00091   <span class="keywordtype">int</span> <a class="code" href="class_organismo.html#adcc0750f9405e7334ac6a69e4ebb1b8" title="Consultora del número de víctimas.">num_victimas</a>() <span class="keyword">const</span>;
+<a name="l00092"></a>00092 
+<a name="l00093"></a>00093   <span class="comment">// Entrada / Salida</span>
+<a name="l00098"></a>00098 <span class="comment"></span>  <span class="keywordtype">void</span> <a class="code" href="class_organismo.html#f39e60a75531166b33e001becf5d1764" title="Operación de lectura.">leer_organismo</a>(<span class="keywordtype">int</span> N);
+<a name="l00099"></a>00099 
+<a name="l00105"></a>00105   <span class="keywordtype">void</span> <a class="code" href="class_organismo.html#97dc1c6451d90ddc7dfbf50d3b4c6931" title="Operación de escritura.">escribir_organismo</a> (<span class="keywordtype">bool</span> estr) <span class="keyword">const</span>;
+<a name="l00106"></a>00106 
+<a name="l00107"></a>00107 
+<a name="l00108"></a>00108 <span class="keyword">private</span>:
+<a name="l00109"></a>00109 
+<a name="l00114"></a>00114   <span class="keywordtype">bool</span> <a class="code" href="class_organismo.html#9300db647ef2796d14116d0ab7181b39" title="Comprobación de simetría de dos árboles.">simetricos</a>(Arbre&lt;Celula&gt; &amp;a1, Arbre&lt;Celula&gt; &amp;a2) <span class="keyword">const</span>;
+<a name="l00115"></a>00115 
+<a name="l00120"></a>00120   pair&lt;int,int&gt; <a class="code" href="class_organismo.html#6e4453e30b7e2ab5d34230f710f0e1e0" title="Lucha de dos árboles de células.">lucha_arboles</a>(Arbre&lt;Celula&gt; &amp;a1, Arbre&lt;Celula&gt; &amp;a2) <span class="keyword">const</span>;
+<a name="l00121"></a>00121 
+<a name="l00126"></a>00126   <span class="keywordtype">void</span> <a class="code" href="class_organismo.html#bf016c166b00ca0f7016afd44d282913" title="Operación de lectura de un árbol de células.">leer_arbol_celulas</a>(<span class="keywordtype">int</span> N, Arbre&lt;Celula&gt; &amp;a);
+<a name="l00127"></a>00127 
+<a name="l00132"></a>00132   <span class="keywordtype">void</span> <a class="code" href="class_organismo.html#8fc12e6440e1550f1929c32043fcd8da" title="Operación de escritura de un árbol de células.">escribir_arbol_celulas_id</a>(Arbre&lt;Celula&gt; &amp;a) <span class="keyword">const</span>;
+<a name="l00133"></a>00133 
+<a name="l00134"></a>00134 };
+<a name="l00135"></a>00135 <span class="preprocessor">#endif</span>
+<a name="l00136"></a>00136 <span class="preprocessor"></span>
+</pre></div></div>
+<hr size="1"><address style="text-align: right;"><small>Generado el Wed Apr 27 15:44:28 2011 para Caso de estudio: experimentos inmunologicos. Laboratorio de PRO2. por&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.6 </small></address>
+</body>
+</html>

@@ -1,0 +1,388 @@
+PRÁCTICA DE PRAP - JUEGO DE PRUEBAS PÚBLICO
+
+Esquema del documento:
+
+0. Observaciones previas.
+1. Composición de los juegos de pruebas.
+2. Entrada y salida de las operaciones.
+3. Juego de pruebas público.
+
+-----------------------------------------------------------------------------
+0. OBSERVACIONES PREVIAS
+-----------------------------------------------------------------------------
+
+* Para una ejecución, el número de parámetros es el mismo para todas las
+  células.  Dicho número (N, entero mayor que 0) se lee como dato de
+  inicialización.
+
+* Para una ejecución, el número de organismos iniciales del sistema (m, entero
+  mayor que 0) se lee como dato de inicialización.
+
+* Tanto los identificadores de células como sus índices de tolerancia son
+  enteros mayores que 0; los N parámetros de cada célula son números reales
+  positivos con dos decimales como máximo.  
+	
+* En general, los datos de operaciones diferentes se leerán en líneas
+  diferentes y los resultados de operaciones diferentes se escribirán en líneas
+  diferentes.
+
+* Los ficheros de entrada de los juegos de pruebas tendrán líneas de menos de
+  80 caracteres. Si necesitamos datos muy grandes para una misma operación, los
+  dividiremos en varias líneas.
+
+* No es necesario comprobar si los datos que se van a leer son consistentes,
+  por ejemplo, si para cada célula se esperan N parámetros reales, está
+  garantizado que se podrán leer.
+ 
+-------------------------------------------------------------------------------
+1. COMPOSICIÓN DE LOS JUEGOS DE PRUEBAS
+-------------------------------------------------------------------------------
+
+La primera acción es leer el número de parámetros de las células (N).
+
+A continuación se lee el número de organismos defensivos (m) con los que se
+inicializará el sistema y los m organismos. Cada uno de ellos se presenta como
+un árbol binario de células recorrido en PREORDEN: primero el núcleo, después
+las sucesoras por la izquierda, también en preorden y, por último, las
+sucesoras por la derecha, asimismo en preorden. Para más información, consultad
+el módulo ArbInOutint de la sesión 7 de laboratorio ("Uso de listas y
+arboles").
+
+Para cada célula se leerá su identificador, luego su índice de tolerancia y a
+continuación los N reales que se corresponden con los parámetros que
+representan las propiedades de la célula.
+
+Después ya vendrán las operaciones. Cada operación se identifica mediante un
+código numérico, que será un entero negativo entre -1 y -3 (esto se ha elegido
+simplemente para favorecer la legibilidad de los juegos de pruebas). Cada
+operación comenzará con su código y a éste le seguirán los datos de la misma,
+si es que necesita alguno. Está garantizado que no aparecerán códigos
+inexistentes.
+
+-------------------------------------------------------------------------------
+2. ENTRADA Y SALIDA DE LAS OPERACIONES
+-------------------------------------------------------------------------------
+
+Seguidamente, detallamos los elementos específicos de las diferentes
+operaciones. Para ver ejemplos concretos de la sintaxis de sus entradas y
+salidas, id al apartado 3.
+
+
+* AÑADIR UN ORGANISMO AL SISTEMA
+
+Identificación: -1
+
+Datos: la estructura celular del organismo.
+
+Salida: dos numeros naturales, a) el número de muertes que ha causado al
+enfrentarse con los organismos del sistema y b) un "1" (o "true") si se añade al sistema
+(es decir, si no muere al intentar entrar) o un "0" (o "false") si ha sido derrotado.
+
+Ejemplo 1: si el organismo nuevo mata a 4
+defensivos y no muere, la salida ha de ser 4 1
+
+Ejemplo 2: si el organismo nuevo mata a 1
+maligno y muere, la salida ha de ser 1 0, tanto si muere al mismo tiempo
+que el maligno, como si muere mas tarde.
+
+
+Efectos secundarios: se eliminan del sistema los organismos que hayan sido
+destruidos y el organismo nuevo se añade al sistema si no ha sido destruido.
+
+* ESCRIBIR ORGANISMOS DEL SISTEMA
+
+Identificación: -2
+
+Datos: un booleano que indica el tipo de organismo requerido (true para
+defensivos, false para malignos) y otro booleano que indica si se ha de mostrar
+la estructura celular o no.
+
+Salida: los id's y los números de muertes de los organismos del sistema del
+tipo requerido, en orden ascendente de id.  En el caso de que se pida la
+estructura celular, se mostrará para cada célula únicamente su id.  Si no hay
+en el sistema ningún organismo del tipo requerido, no se escribe nada.
+
+Cuando se pida escribir la estructura celular de un organismo, se hará en
+INORDEN: primero los sucesores por la izquierda del núcleo, a su vez en
+inorden, después el núcleo y, por último, los sucesores por la derecha del
+núcleo, también en inorden.  Para más información, consultad el módulo
+ArbInOutint de la sesión 6 de laboratorio.
+
+Efectos secundarios: no tiene.
+
+* SALIR DEL PROGRAMA:
+
+Identificación: -3
+ 
+-------------------------------------------------------------------------------
+3. JUEGO DE PRUEBAS PÚBLICO
+-------------------------------------------------------------------------------
+
+Entrada comentada:
+------------------
+5                                  //Número de parámetros de las celulas
+
+2                                  //Número de organismos iniciales del sistema
+6 5 9 1 2 8 5                      //Organismo número 1 (4 células)
+8 7 9 2 2 8 6.12                   //Su núcleo tiene id = 6 y tolerancia = 5 
+0                                 
+0
+3 6 9 1 12 8 8
+1 3 9 1 2 8 5 
+0
+0
+0
+false
+3 4 1 6 2 1 2                      //Organismo número 2 (4 células)
+0
+10 1 2 1 1 3 1 
+5 0 9 2 2 8 6 
+0
+0
+9 3 1 1 12 8 8 
+0
+0
+false
+
+-2 true false   //Se piden los organismos defensivos del sistema sin estructura
+
+-2 false false  //Se piden los organismos malignos del sistema sin estructura
+
+-1                                 //Se va a introducir el organismo número 3
+1 3 6 4 4 7 9  
+2 5 6 12 12 3 2 
+0
+0
+3 3 3 3 5 5 3 
+0
+0
+true
+
+-2 true false   //Se piden los organismos defensivos del sistema sin estructura
+-2 false false  //Se piden los organismos malignos del sistema sin estructura
+-1                                  //Se va a introducir el organismo número 4
+9 1 13.1 33 24 32 33 
+5 0 53 67 53 4 29 
+0
+0
+3 0 7 1 2 4 4 
+0
+0
+false
+
+-2 true false   //Se piden los organismos defensivos del sistema sin estructura
+
+-2 false false  //Se piden los organismos malignos del sistema sin estructura
+
+-1                                  //Se va a introducir el organismo número 5
+8 1 1 56 3  2  2 
+4 2 9 1 2  5  8 
+1 2 9 31 0  8  5 
+0
+0
+3 2 1 1 24 1 5 
+0
+0
+0
+false
+
+-2 true false   //Se piden los organismos defensivos del sistema sin estructura
+
+-2 false false  //Se piden los organismos malignos del sistema sin estructura
+
+-1                                  //Se va a introducir el organismo número 6
+7 3 9 56 23 12 3 
+5 3 20 4 24 8 6 
+2 5 10 13 62 34 54 
+0
+0
+1 4 93 24 24 84 6 
+0
+0
+0
+true
+
+-2 true true   //Se piden los organismos defensivos del sistema con estructura 
+
+-2 false true  //Se piden los organismos malignos del sistema con estructura 
+
+-3                                                  //Fin del programa
+
+Salida comentada: 
+-----------------
+Defensivos del sistema sin estructura
+1 0          //Hay dos organismos defensivos (ident. 1 y 2), 
+2 0          //no han matado a nadie, no hay malignos. 
+Malignos del sistema sin estructura
+Entrada del nuevo organismo
+0 1          //El organismo maligno añadido no mata a nadie y no muere al entrar
+Defensivos del sistema sin estructura
+1 0          //Hay dos organismos defensivos en el sistema (1 y 2),
+2 0          //no han matado a nadie.
+Malignos del sistema sin estructura
+3 0          //Hay un organismo maligno (3), no ha matado a nadie.
+Entrada del nuevo organismo
+1 1          //El organismo defensivo añadido mata a un rival y no muere al entrar.
+Defensivos del sistema sin estructura
+1 0          //Hay tres organismos defensivos en el sistema (1, 2 y 4),
+2 0          //el 1 y el 2 no han matado a nadie,
+4 1          //el organismo 4 ha causado una muerte, no hay malignos.      
+Malignos del sistema sin estructura
+Entrada del nuevo organismo
+0 1          //El organismo defensivo añadido no mata a nadie y no muere al entrar.
+Defensivos del sistema sin estructura
+1 0          //Hay cuatro organismos defensivos en el sistema (1, 2, 4 y 5),
+2 0          //el 1 el 2 y el 5 no han matado a nadie,                           
+4 1          //el 4 ha matado a un rival
+5 0          //no hay organismos malignos.
+Malignos del sistema sin estructura
+Entrada del nuevo organismo
+1 1          //El organismo maligno añadido mata a un rival y no muere al entrar.
+Defensivos del sistema con estructura
+1 0 8 6 1 3  //Hay tres organismos defensivos en el sistema (1, 4 y 5), 
+4 1 5 9 3
+5 0 1 4 3 8  //se muestran con estructura celular.
+Malignos del sistema con estructura
+6 1 2 5 1 7  //Hay un organismo maligno en el sistema (6), se muestra con estructura celular.
+
+                                
+Al final puede haber una línea en blanco o más.      
+-------------------------------------------------------------------------------
+
+Entrada sin comentar: cortadla y pegadla en un fichero para usarla como entrada
+a vuestro programa mediante la redirección <.
+
+-------------------------------------------------------------------------------
+5
+
+2
+6 5 9 1 2 8 5
+8 7 9 2 2 8 6.12
+0
+0
+3 6 9 1 12 8 8
+1 3 9 1 2 8 5 
+0
+0
+0
+false
+3 4 1 6 2 1 2 
+0
+10 1 2 1 1 3 1 
+5 0 9 2 2 8 6 
+0
+0
+9 3 1 1 12 8 8 
+0
+0
+false
+
+-2 true false
+
+-2 false false
+
+-1
+1 3 6 4 4 7 9  
+2 5 6 12 12 3 2 
+0
+0
+3 3 3 3 5 5 3 
+0
+0
+true
+
+-2 true false
+
+-2 false false
+
+-1
+9 1 13.1 33 24 32 33 
+5 0 53 67 53 4 29 
+0
+0
+3 0 7 1 2 4 4 
+0
+0
+false
+
+-2 true false
+
+-2 false false
+
+-1
+8 1 1 56 3  2  2 
+4 2 9 1 2  5  8 
+1 2 9 31 0  8  5 
+0
+0
+3 2 1 1 24 1 5 
+0
+0
+0
+false
+
+-2 true false
+
+-2 false false
+
+-1
+7 3 9 56 23 12 3 
+5 3 20 4 24 8 6 
+2 5 10 13 62 34 54 
+0
+0
+1 4 93 24 24 84 6 
+0
+0
+0
+true
+
+-2 true true
+
+-2 false true
+
+-3
+
+-------------------------------------------------------------------------------
+
+Salida sin comentar: vuestro resultado ha de coincidir exactamente con éste
+(probándolo con el comando diff -bw de unix o diff -Bbw de Linux), salvo las
+líneas en blanco del final, que pueden variar.
+
+------------------------------------------------------------------------------
+Defensivos del sistema sin estructura
+1 0
+2 0
+Malignos del sistema sin estructura
+Entrada del nuevo organismo
+0 1
+Defensivos del sistema sin estructura
+1 0
+2 0
+Malignos del sistema sin estructura
+3 0
+Entrada del nuevo organismo
+1 1
+Defensivos del sistema sin estructura
+1 0
+2 0
+4 1
+Malignos del sistema sin estructura
+Entrada del nuevo organismo
+0 1
+Defensivos del sistema sin estructura
+1 0
+2 0
+4 1
+5 0
+Malignos del sistema sin estructura
+Entrada del nuevo organismo
+1 1
+Defensivos del sistema con estructura
+1 0 8 6 1 3
+4 1 5 9 3
+5 0 1 4 3 8
+Malignos del sistema con estructura
+6 1 2 5 1 7
+
+----------------------------------------------------------------------------

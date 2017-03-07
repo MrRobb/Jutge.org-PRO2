@@ -1,0 +1,79 @@
+\select@language {spanish}
+\contentsline {chapter}{\numberline {1}P\IeC {\'a}gina principal}{1}{chapter.1}
+\contentsline {chapter}{\numberline {2}\IeC {\'I}ndice de clases}{3}{chapter.2}
+\contentsline {section}{\numberline {2.1}Lista de clases}{3}{section.2.1}
+\contentsline {chapter}{\numberline {3}Indice de archivos}{5}{chapter.3}
+\contentsline {section}{\numberline {3.1}Lista de archivos}{5}{section.3.1}
+\contentsline {chapter}{\numberline {4}Documentaci\IeC {\'o}n de las clases}{7}{chapter.4}
+\contentsline {section}{\numberline {4.1}Referencia de la Clase Celula}{7}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Descripci\IeC {\'o}n detallada}{8}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Documentaci\IeC {\'o}n del constructor y destructor}{8}{subsection.4.1.2}
+\contentsline {subsubsection}{\numberline {4.1.2.1}Celula}{8}{subsubsection.4.1.2.1}
+\contentsline {subsubsection}{\numberline {4.1.2.2}$\sim $\discretionary {-}{}{}Celula}{8}{subsubsection.4.1.2.2}
+\contentsline {subsection}{\numberline {4.1.3}Documentaci\IeC {\'o}n de las funciones miembro}{8}{subsection.4.1.3}
+\contentsline {subsubsection}{\numberline {4.1.3.1}lucha\discretionary {-}{}{}\_\discretionary {-}{}{}celulas}{8}{subsubsection.4.1.3.1}
+\contentsline {subsubsection}{\numberline {4.1.3.2}es\discretionary {-}{}{}\_\discretionary {-}{}{}vacia}{9}{subsubsection.4.1.3.2}
+\contentsline {subsubsection}{\numberline {4.1.3.3}leer}{9}{subsubsection.4.1.3.3}
+\contentsline {subsubsection}{\numberline {4.1.3.4}escribir}{10}{subsubsection.4.1.3.4}
+\contentsline {subsection}{\numberline {4.1.4}Documentaci\IeC {\'o}n de los datos miembro}{10}{subsection.4.1.4}
+\contentsline {subsubsection}{\numberline {4.1.4.1}I\discretionary {-}{}{}D\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}V\discretionary {-}{}{}A\discretionary {-}{}{}C\discretionary {-}{}{}I\discretionary {-}{}{}A}{10}{subsubsection.4.1.4.1}
+\contentsline {subsubsection}{\numberline {4.1.4.2}id}{10}{subsubsection.4.1.4.2}
+\contentsline {subsubsection}{\numberline {4.1.4.3}i\discretionary {-}{}{}\_\discretionary {-}{}{}tol}{10}{subsubsection.4.1.4.3}
+\contentsline {subsubsection}{\numberline {4.1.4.4}param}{10}{subsubsection.4.1.4.4}
+\contentsline {section}{\numberline {4.2}Referencia de la Clase Organismo}{11}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Descripci\IeC {\'o}n detallada}{12}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Documentaci\IeC {\'o}n del constructor y destructor}{12}{subsection.4.2.2}
+\contentsline {subsubsection}{\numberline {4.2.2.1}Organismo}{12}{subsubsection.4.2.2.1}
+\contentsline {subsubsection}{\numberline {4.2.2.2}$\sim $\discretionary {-}{}{}Organismo}{12}{subsubsection.4.2.2.2}
+\contentsline {subsection}{\numberline {4.2.3}Documentaci\IeC {\'o}n de las funciones miembro}{12}{subsection.4.2.3}
+\contentsline {subsubsection}{\numberline {4.2.3.1}anadir\discretionary {-}{}{}\_\discretionary {-}{}{}id}{12}{subsubsection.4.2.3.1}
+\contentsline {subsubsection}{\numberline {4.2.3.2}incrementar\discretionary {-}{}{}\_\discretionary {-}{}{}victimas}{13}{subsubsection.4.2.3.2}
+\contentsline {subsubsection}{\numberline {4.2.3.3}lucha\discretionary {-}{}{}\_\discretionary {-}{}{}organismos}{13}{subsubsection.4.2.3.3}
+\contentsline {subsubsection}{\numberline {4.2.3.4}es\discretionary {-}{}{}\_\discretionary {-}{}{}maligno}{14}{subsubsection.4.2.3.4}
+\contentsline {subsubsection}{\numberline {4.2.3.5}num\discretionary {-}{}{}\_\discretionary {-}{}{}victimas}{14}{subsubsection.4.2.3.5}
+\contentsline {subsubsection}{\numberline {4.2.3.6}leer}{14}{subsubsection.4.2.3.6}
+\contentsline {subsubsection}{\numberline {4.2.3.7}escribir}{15}{subsubsection.4.2.3.7}
+\contentsline {subsubsection}{\numberline {4.2.3.8}simetricos}{15}{subsubsection.4.2.3.8}
+\contentsline {subsubsection}{\numberline {4.2.3.9}lucha\discretionary {-}{}{}\_\discretionary {-}{}{}arboles}{15}{subsubsection.4.2.3.9}
+\contentsline {subsubsection}{\numberline {4.2.3.10}leer\discretionary {-}{}{}\_\discretionary {-}{}{}arbol\discretionary {-}{}{}\_\discretionary {-}{}{}celulas}{16}{subsubsection.4.2.3.10}
+\contentsline {subsubsection}{\numberline {4.2.3.11}escribir\discretionary {-}{}{}\_\discretionary {-}{}{}arbol\discretionary {-}{}{}\_\discretionary {-}{}{}celulas\discretionary {-}{}{}\_\discretionary {-}{}{}id}{17}{subsubsection.4.2.3.11}
+\contentsline {subsection}{\numberline {4.2.4}Documentaci\IeC {\'o}n de los datos miembro}{17}{subsection.4.2.4}
+\contentsline {subsubsection}{\numberline {4.2.4.1}celulas}{17}{subsubsection.4.2.4.1}
+\contentsline {subsubsection}{\numberline {4.2.4.2}id}{17}{subsubsection.4.2.4.2}
+\contentsline {subsubsection}{\numberline {4.2.4.3}maligno}{17}{subsubsection.4.2.4.3}
+\contentsline {subsubsection}{\numberline {4.2.4.4}victimas}{17}{subsubsection.4.2.4.4}
+\contentsline {section}{\numberline {4.3}Referencia de la Clase Sistema}{17}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Descripci\IeC {\'o}n detallada}{18}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Documentaci\IeC {\'o}n del constructor y destructor}{18}{subsection.4.3.2}
+\contentsline {subsubsection}{\numberline {4.3.2.1}Sistema}{18}{subsubsection.4.3.2.1}
+\contentsline {subsubsection}{\numberline {4.3.2.2}$\sim $\discretionary {-}{}{}Sistema}{19}{subsubsection.4.3.2.2}
+\contentsline {subsection}{\numberline {4.3.3}Documentaci\IeC {\'o}n de las funciones miembro}{19}{subsection.4.3.3}
+\contentsline {subsubsection}{\numberline {4.3.3.1}anadir\discretionary {-}{}{}\_\discretionary {-}{}{}organismo}{19}{subsubsection.4.3.3.1}
+\contentsline {subsubsection}{\numberline {4.3.3.2}leer}{19}{subsubsection.4.3.3.2}
+\contentsline {subsubsection}{\numberline {4.3.3.3}escribir}{20}{subsubsection.4.3.3.3}
+\contentsline {subsubsection}{\numberline {4.3.3.4}luchas\discretionary {-}{}{}\_\discretionary {-}{}{}org\discretionary {-}{}{}\_\discretionary {-}{}{}cola}{20}{subsubsection.4.3.3.4}
+\contentsline {subsubsection}{\numberline {4.3.3.5}clear}{21}{subsubsection.4.3.3.5}
+\contentsline {subsubsection}{\numberline {4.3.3.6}recolocar}{22}{subsubsection.4.3.3.6}
+\contentsline {subsubsection}{\numberline {4.3.3.7}escribir\discretionary {-}{}{}\_\discretionary {-}{}{}sistema\discretionary {-}{}{}\_\discretionary {-}{}{}cola}{22}{subsubsection.4.3.3.7}
+\contentsline {subsection}{\numberline {4.3.4}Documentaci\IeC {\'o}n de los datos miembro}{23}{subsection.4.3.4}
+\contentsline {subsubsection}{\numberline {4.3.4.1}def}{23}{subsubsection.4.3.4.1}
+\contentsline {subsubsection}{\numberline {4.3.4.2}mal}{23}{subsubsection.4.3.4.2}
+\contentsline {subsubsection}{\numberline {4.3.4.3}id}{23}{subsubsection.4.3.4.3}
+\contentsline {chapter}{\numberline {5}Documentaci\IeC {\'o}n de archivos}{25}{chapter.5}
+\contentsline {section}{\numberline {5.1}Referencia del Archivo Celula.\discretionary {-}{}{}cpp}{25}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Descripci\IeC {\'o}n detallada}{25}{subsection.5.1.1}
+\contentsline {section}{\numberline {5.2}Referencia del Archivo Celula.\discretionary {-}{}{}hpp}{25}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Descripci\IeC {\'o}n detallada}{26}{subsection.5.2.1}
+\contentsline {section}{\numberline {5.3}Referencia del Archivo Organismo.\discretionary {-}{}{}cpp}{26}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Descripci\IeC {\'o}n detallada}{26}{subsection.5.3.1}
+\contentsline {section}{\numberline {5.4}Referencia del Archivo Organismo.\discretionary {-}{}{}hpp}{26}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}Descripci\IeC {\'o}n detallada}{27}{subsection.5.4.1}
+\contentsline {section}{\numberline {5.5}Referencia del Archivo pro2.\discretionary {-}{}{}cpp}{27}{section.5.5}
+\contentsline {subsection}{\numberline {5.5.1}Descripci\IeC {\'o}n detallada}{28}{subsection.5.5.1}
+\contentsline {subsection}{\numberline {5.5.2}Documentaci\IeC {\'o}n de las funciones}{28}{subsection.5.5.2}
+\contentsline {subsubsection}{\numberline {5.5.2.1}main}{28}{subsubsection.5.5.2.1}
+\contentsline {section}{\numberline {5.6}Referencia del Archivo Sistema.\discretionary {-}{}{}cpp}{29}{section.5.6}
+\contentsline {subsection}{\numberline {5.6.1}Descripci\IeC {\'o}n detallada}{29}{subsection.5.6.1}
+\contentsline {section}{\numberline {5.7}Referencia del Archivo Sistema.\discretionary {-}{}{}hpp}{29}{section.5.7}
+\contentsline {subsection}{\numberline {5.7.1}Descripci\IeC {\'o}n detallada}{30}{subsection.5.7.1}
+\contentsline {part}{\IeC {\'I}ndice}{30}{subsection.5.7.1}

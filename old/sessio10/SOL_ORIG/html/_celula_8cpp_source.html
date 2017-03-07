@@ -1,0 +1,156 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>Caso de estudio: experimentos inmunologicos. Laboratorio de PRO2.: Fichero Fuente Celula.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Caso de estudio: experimentos inmunologicos. Laboratorio de PRO2.
+   &#160;<span id="projectnumber">v4.1 20-11-2014</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.2 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="annotated.html"><span>Clases</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;archivos</span></a></li>
+      <li><a href="globals.html"><span>Miembros&#160;de&#160;los&#160;ficheros</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Clases</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Archivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Celula.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_celula_8cpp.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_celula_8hpp.html" title="Especificación de la clase Celula.">Celula.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="code" href="class_celula.html#a3c5017fbcec8cb564acc666aa7e21206">    7</a></span>&#160;<a class="code" href="class_celula.html#a3c5017fbcec8cb564acc666aa7e21206" title="Creadora por defecto.">Celula::Celula</a>() </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;   <span class="comment">// Inicializa una célula con el id de célula vacía</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;   <span class="keywordtype">id</span> = <a class="code" href="class_celula.html#affff67b41ead0b1f3a3f4faad6c049ac" title="Identificador especial para células vacias.">ID_VACIA</a>;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;   <a class="code" href="class_celula.html#abda46be7b30a13909d9819c46238080b" title="Indice de tolerancia.">i_tol</a> = 0;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;}</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="code" href="class_celula.html#aa102b024e4c8d91a2f69afa14d4e4130">   14</a></span>&#160;<a class="code" href="class_celula.html#aa102b024e4c8d91a2f69afa14d4e4130" title="Destructora por defecto.">Celula::~Celula</a>() {}</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="code" href="class_celula.html#a3dd8be98f1548b02696e2fc32b8d19b4">   16</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="class_celula.html#a3dd8be98f1548b02696e2fc32b8d19b4" title="Consultora que determina el resultado de la lucha entre dos células.">Celula::lucha_celulas</a> (<span class="keyword">const</span> <a class="code" href="class_celula.html" title="Representa el conjunto de características y operaciones de las células.">Celula</a> &amp;c2)<span class="keyword"> const </span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">// Se trata de obtener la diferencia entre el número de posiciones de la primera</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">// célula que superan a las de la segunda y viceversa. Después se compara dicha</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">// diferencia con los indicadores de tolerancia.</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;   <span class="keywordtype">int</span> i = 0; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;   <span class="keywordtype">int</span> dif = 0;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">// Inv: dif = diferencia entre el número de posiciones en [0..i-1] en que c1 supera a c2 </span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">// y viceversa, 0&lt;=i&lt;=param.size()</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;   <span class="keywordflow">while</span> (i &lt; <a class="code" href="class_celula.html#a386c6da3af12b5662e3866675d60a4b7" title="Parámetros de la célula.">param</a>.size()) {</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;     <span class="keywordflow">if</span> (<a class="code" href="class_celula.html#a386c6da3af12b5662e3866675d60a4b7" title="Parámetros de la célula.">param</a>[i] &gt; c2.<a class="code" href="class_celula.html#a386c6da3af12b5662e3866675d60a4b7" title="Parámetros de la célula.">param</a>[i]) ++dif;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;     <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code" href="class_celula.html#a386c6da3af12b5662e3866675d60a4b7" title="Parámetros de la célula.">param</a>[i] &lt; c2.<a class="code" href="class_celula.html#a386c6da3af12b5662e3866675d60a4b7" title="Parámetros de la célula.">param</a>[i]) --dif;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;     ++i;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;   }</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">// Post1: dif = diferencia entre el número de posiciones totales en que </span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">// c1 supera a c2 y viceversa </span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;   <span class="keywordtype">int</span> n = 3;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;   <span class="keywordflow">if</span> (dif &gt; c2.<a class="code" href="class_celula.html#abda46be7b30a13909d9819c46238080b" title="Indice de tolerancia.">i_tol</a>) n = 1;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;   <span class="keywordflow">else</span> <span class="keywordflow">if</span> (dif &lt; -<a class="code" href="class_celula.html#abda46be7b30a13909d9819c46238080b" title="Indice de tolerancia.">i_tol</a>) n = 2;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;   <span class="keywordflow">return</span> n;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;}</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="code" href="class_celula.html#a4e97c60a207191b2cc951ccdf245df4b">   40</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_celula.html#a4e97c60a207191b2cc951ccdf245df4b" title="Consultora que indica si la célula es vacía.">Celula::es_vacia</a>()<span class="keyword"> const </span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;   <span class="keywordflow">return</span> <span class="keywordtype">id</span> == <a class="code" href="class_celula.html#affff67b41ead0b1f3a3f4faad6c049ac" title="Identificador especial para células vacias.">ID_VACIA</a>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="code" href="class_celula.html#a5124ea0c0da24dfc295dcc428652ee43">   45</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_celula.html#a5124ea0c0da24dfc295dcc428652ee43" title="Operación de lectura.">Celula::leer</a>(<span class="keywordtype">int</span> N) </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;{</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment">// Simplemente lee todos los componentes de la célula teniendo en cuenta que si </span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment">// el identificador es cero se trata de una celula &quot;marca&quot; y no es necesario continuar leyendo.</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;   <span class="keywordtype">id</span> = readint();</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;   <span class="keywordflow">if</span> (<span class="keywordtype">id</span> != <a class="code" href="class_celula.html#affff67b41ead0b1f3a3f4faad6c049ac" title="Identificador especial para células vacias.">ID_VACIA</a>) {</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;      <a class="code" href="class_celula.html#abda46be7b30a13909d9819c46238080b" title="Indice de tolerancia.">i_tol</a> = readint();</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;      <a class="code" href="class_celula.html#a386c6da3af12b5662e3866675d60a4b7" title="Parámetros de la célula.">param</a> = vector&lt;double&gt; (N);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; N; ++i) {</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;          <a class="code" href="class_celula.html#a386c6da3af12b5662e3866675d60a4b7" title="Parámetros de la célula.">param</a>[i] = readdouble();</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;      }</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;   }</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;}</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="code" href="class_celula.html#ae16a94d28e49affafd260405414f37ad">   59</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_celula.html#ae16a94d28e49affafd260405414f37ad" title="Operación de escritura.">Celula::escribir</a>()<span class="keyword"> const </span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment">// Análogamente, se trata sólo de escribir los componentes que nos interesan,</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment">// en este caso, según el enunciado, el identificador de la célula.</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;   cout &lt;&lt; <a class="code" href="class_celula.html#a0984a8b3deeed4979ed6f6141edc3c0c" title="Identificador de la célula.">id</a>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;}</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.2
+</small></address>
+</body>
+</html>

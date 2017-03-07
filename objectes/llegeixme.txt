@@ -1,0 +1,4 @@
+Els fitxers .o d'aquesta carpeta han estat compilats amb p2++
+(incloent l'opcio -D_GLIBCXX_DEBUG) en el linux per defecte de la FIB,
+que es de 64 bits
+

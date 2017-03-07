@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>Caso de estudio: experimentos inmunologicos. Laboratorio de PRO2.: Fichero Fuente Celula.hh</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Caso de estudio: experimentos inmunologicos. Laboratorio de PRO2.
+   &#160;<span id="projectnumber">v4.1 20-11-2014</span>
+   </div>
+   
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- Generado por Doxygen 1.7.6.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="annotated.html"><span>Clases</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;archivos</span></a></li>
+      <li><a href="globals.html"><span>Miembros&#160;de&#160;los&#160;ficheros</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="headertitle">
+<div class="title">Celula.hh</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_celula_8hh.html">Ir a la documentación de este archivo.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 
+<a name="l00005"></a>00005 <span class="preprocessor">#ifndef _CELULA_</span>
+<a name="l00006"></a>00006 <span class="preprocessor"></span><span class="preprocessor">#define _CELULA_</span>
+<a name="l00007"></a>00007 <span class="preprocessor"></span>
+<a name="l00008"></a>00008 <span class="comment">//#include &quot;utils.PRO2&quot;</span>
+<a name="l00009"></a>00009 <span class="comment">//#include &lt;vector&gt;</span>
+<a name="l00010"></a>00010 
+<a name="l00011"></a>00011 <span class="comment">/*</span>
+<a name="l00012"></a>00012 <span class="comment"> * Clase Celula</span>
+<a name="l00013"></a>00013 <span class="comment"> */</span>
+<a name="l00014"></a>00014 
+<a name="l00029"></a><a class="code" href="class_celula.html">00029</a> <span class="keyword">class </span><a class="code" href="class_celula.html" title="Representa el conjunto de características y operaciones de las células.">Celula</a> {
+<a name="l00030"></a>00030 
+<a name="l00031"></a>00031 <span class="keyword">private</span>:
+<a name="l00032"></a>00032 
+<a name="l00034"></a><a class="code" href="class_celula.html#affff67b41ead0b1f3a3f4faad6c049ac">00034</a>   <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="class_celula.html#affff67b41ead0b1f3a3f4faad6c049ac" title="Identificador especial para células vacias.">ID_VACIA</a> = 0; 
+<a name="l00036"></a><a class="code" href="class_celula.html#a0984a8b3deeed4979ed6f6141edc3c0c">00036</a>   <span class="keywordtype">int</span> <a class="code" href="class_celula.html#a0984a8b3deeed4979ed6f6141edc3c0c" title="Identificador de la célula.">id</a>; 
+<a name="l00038"></a><a class="code" href="class_celula.html#abda46be7b30a13909d9819c46238080b">00038</a>   <span class="keywordtype">int</span> <a class="code" href="class_celula.html#abda46be7b30a13909d9819c46238080b" title="Indice de tolerancia.">i_tol</a>; <span class="comment">// </span>
+<a name="l00040"></a><a class="code" href="class_celula.html#a386c6da3af12b5662e3866675d60a4b7">00040</a> <span class="comment"></span>  vector&lt;double&gt; <a class="code" href="class_celula.html#a386c6da3af12b5662e3866675d60a4b7" title="Parámetros de la célula.">param</a>; 
+<a name="l00041"></a>00041 
+<a name="l00042"></a>00042 <span class="keyword">public</span>:
+<a name="l00043"></a>00043 
+<a name="l00044"></a>00044   <span class="comment">// Constructora</span>
+<a name="l00049"></a>00049 <span class="comment"></span>  <a class="code" href="class_celula.html#a3c5017fbcec8cb564acc666aa7e21206" title="Creadora por defecto.">Celula</a>(); 
+<a name="l00050"></a>00050 
+<a name="l00051"></a>00051   <span class="comment">// Destructora</span>
+<a name="l00054"></a>00054 <span class="comment"></span>  <a class="code" href="class_celula.html#aa102b024e4c8d91a2f69afa14d4e4130" title="Destructora por defecto.">~Celula</a>(); 
+<a name="l00055"></a>00055 
+<a name="l00056"></a>00056   <span class="comment">// Consultoras</span>
+<a name="l00057"></a>00057 
+<a name="l00065"></a>00065   <span class="keywordtype">int</span> <a class="code" href="class_celula.html#a3dd8be98f1548b02696e2fc32b8d19b4" title="Consultora que determina el resultado de la lucha entre dos células.">lucha_celulas</a> (<span class="keyword">const</span> <a class="code" href="class_celula.html" title="Representa el conjunto de características y operaciones de las células.">Celula</a> &amp;c2) <span class="keyword">const</span>;
+<a name="l00066"></a>00066 
+<a name="l00071"></a>00071   <span class="keywordtype">bool</span> <a class="code" href="class_celula.html#a4e97c60a207191b2cc951ccdf245df4b" title="Consultora que indica si la célula es vacía.">es_vacia</a>() <span class="keyword">const</span>;
+<a name="l00072"></a>00072 
+<a name="l00073"></a>00073   <span class="comment">// Entrada / Salida</span>
+<a name="l00074"></a>00074 
+<a name="l00079"></a>00079   <span class="keywordtype">void</span> <a class="code" href="class_celula.html#a5124ea0c0da24dfc295dcc428652ee43" title="Operación de lectura.">leer</a>(<span class="keywordtype">int</span> N);
+<a name="l00080"></a>00080 
+<a name="l00085"></a>00085   <span class="keywordtype">void</span> <a class="code" href="class_celula.html#ae16a94d28e49affafd260405414f37ad" title="Operación de escritura.">escribir</a>() <span class="keyword">const</span>;
+<a name="l00086"></a>00086 };
+<a name="l00087"></a>00087 <span class="preprocessor">#endif</span>
+<a name="l00088"></a>00088 <span class="preprocessor"></span>
+</pre></div></div><!-- contents -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Clases</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Archivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+
+
+<hr class="footer"/><address class="footer"><small>
+Generado el Martes, 28 de Abril de 2015 19:20:16 para Caso de estudio: experimentos inmunologicos. Laboratorio de PRO2. por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.7.6.1
+</small></address>
+
+</body>
+</html>

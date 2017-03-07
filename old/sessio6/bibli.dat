@@ -1,0 +1,29 @@
+3                                    // número de categorías
+-1 La_insoportable_levedad_del_ser 1 // se devuelve un libro de cat. 1
+-1 Los_viajes_de_Gulliver 1
+-1 El_senyor_dels_anells 1
+-1 STL_Tutorial_and_reference_guide 2
+-1 Avatar 3
+-1 Pa_Negre 3
+-3 2                                 // escribir contenido de la pila 2
+-3 1                                 // escribir contenido de la pila 1
+-2 2 1                               // retirar dos elementos de la pila 1
+-3 1                                 // escribir contenido de la pila 1
+-4
+
+------------- cortar por aqui para redirigir la entrada del programa ----------
+3                                    
+-1 La_insoportable_levedad_del_ser 1 
+-1 Los_viajes_de_Gulliver 1	     
+-1 El_senyor_dels_anells 1	     
+-1 STL_Tutorial_and_reference_guide 2
+-1 Avatar 3			     
+-1 Pa_Negre 3			     
+-3 2                                 
+-3 1                                 
+-2 2 1                               
+-3 1                                 
+-4
+
+
+

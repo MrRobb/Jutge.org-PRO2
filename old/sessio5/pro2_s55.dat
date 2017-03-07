@@ -1,0 +1,22 @@
+-1 q -1 w -2 1 -1 e -1 r -2 2 
+-1 r -1 e -1 w -2 2 -2 4 -1 q 
+-1 w -1 e -1 q -1 r -2 3 -3
+
+El resultado ha de ser
+
+q 1
+
+q 1
+w 1
+
+r 2
+e 2
+
+r 2
+e 2
+w 2
+q 1
+
+w 3
+e 3
+q 3

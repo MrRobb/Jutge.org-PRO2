@@ -1,0 +1,250 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>Caso de estudio: experimentos inmunologicos. Laboratorio de PRO2.: Fichero Fuente Sistema.cc</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Caso de estudio: experimentos inmunologicos. Laboratorio de PRO2.
+   &#160;<span id="projectnumber">v4.1 20-11-2014</span>
+   </div>
+   
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- Generado por Doxygen 1.7.6.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="annotated.html"><span>Clases</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;archivos</span></a></li>
+      <li><a href="globals.html"><span>Miembros&#160;de&#160;los&#160;ficheros</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="headertitle">
+<div class="title">Sistema.cc</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_sistema_8cc.html">Ir a la documentación de este archivo.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 
+<a name="l00005"></a>00005 <span class="preprocessor">#include &quot;<a class="code" href="_sistema_8hh.html" title="Especificación de la clase Sistema.">Sistema.hh</a>&quot;</span>
+<a name="l00006"></a>00006 
+<a name="l00007"></a><a class="code" href="class_sistema.html#a815b07845ef6b03247b239333fe75e28">00007</a> <a class="code" href="class_sistema.html#a815b07845ef6b03247b239333fe75e28" title="Creadora por defecto.">Sistema::Sistema</a>()
+<a name="l00008"></a>00008 {
+<a name="l00009"></a>00009   <span class="keywordtype">id</span> = 1;
+<a name="l00010"></a>00010 }
+<a name="l00011"></a>00011 
+<a name="l00012"></a><a class="code" href="class_sistema.html#aafc86e0f2c3d734fb4c0985f70c27a1a">00012</a> <a class="code" href="class_sistema.html#aafc86e0f2c3d734fb4c0985f70c27a1a" title="Destructora por defecto.">Sistema::~Sistema</a>() {}
+<a name="l00013"></a>00013 
+<a name="l00014"></a><a class="code" href="class_sistema.html#a6522b718fc0701d38c2e2d2c2d2e88a6">00014</a> <span class="keywordtype">void</span> <a class="code" href="class_sistema.html#a6522b718fc0701d38c2e2d2c2d2e88a6" title="Modificadora que gestiona el intento de entrada de un organismo en el sistema.">Sistema::anadir_organismo</a>(<a class="code" href="class_organismo.html" title="Representa la información y las operaciones asociadas a un organismo.">Organismo</a> &amp;o, <span class="keywordtype">bool</span> &amp;sobrevive)
+<a name="l00015"></a>00015 {
+<a name="l00016"></a>00016 <span class="comment">// Proporciona su identificador al nuevo organismo y organiza las luchas de</span>
+<a name="l00017"></a>00017 <span class="comment">// éste. Para ello, emplea la operación privada &quot;luchas_org_cola&quot; que lo enfrenta</span>
+<a name="l00018"></a>00018 <span class="comment">// a los de la cola correspondiente y obtiene la información necesaria.</span>
+<a name="l00019"></a>00019    o.<a class="code" href="class_organismo.html#a4fa50ea637c25ee2b04bd1805ec634dc" title="Modificadora del identificador.">anadir_id</a>(<span class="keywordtype">id</span>);
+<a name="l00020"></a>00020    ++<a class="code" href="class_sistema.html#a69ba5e2cce55afc2a47d899a1100a42a" title="Primer número disponible de identificador de organismo.">id</a>;
+<a name="l00021"></a>00021    <span class="keywordflow">if</span> (o.<a class="code" href="class_organismo.html#aa746619493d11ed0b2eb2c75ce202ad0" title="Consultora de la malignidad del organismo.">es_maligno</a>()) { 
+<a name="l00022"></a>00022       <a class="code" href="class_sistema.html#a9123a18225eece5cf29d0d59067ac509" title="Lucha de un organismo contra los organismos de una cola.">luchas_org_cola</a>(<a class="code" href="class_sistema.html#a7311a56f7b8336096ca52a744c4d3804" title="Cola de organismos defensivos.">def</a>, o, sobrevive);
+<a name="l00023"></a>00023       <span class="keywordflow">if</span> (sobrevive) <a class="code" href="class_sistema.html#a11fa1af3dde26025dd10b3ac103f426e" title="Cola de organismos malignos.">mal</a>.push(o);
+<a name="l00024"></a>00024    }
+<a name="l00025"></a>00025    <span class="keywordflow">else</span> {
+<a name="l00026"></a>00026       <a class="code" href="class_sistema.html#a9123a18225eece5cf29d0d59067ac509" title="Lucha de un organismo contra los organismos de una cola.">luchas_org_cola</a>(<a class="code" href="class_sistema.html#a11fa1af3dde26025dd10b3ac103f426e" title="Cola de organismos malignos.">mal</a>, o, sobrevive);
+<a name="l00027"></a>00027       <span class="keywordflow">if</span> (sobrevive) <a class="code" href="class_sistema.html#a7311a56f7b8336096ca52a744c4d3804" title="Cola de organismos defensivos.">def</a>.push(o);
+<a name="l00028"></a>00028    }
+<a name="l00029"></a>00029 }
+<a name="l00030"></a>00030 
+<a name="l00031"></a><a class="code" href="class_sistema.html#a9123a18225eece5cf29d0d59067ac509">00031</a> <span class="keywordtype">void</span> <a class="code" href="class_sistema.html#a9123a18225eece5cf29d0d59067ac509" title="Lucha de un organismo contra los organismos de una cola.">Sistema::luchas_org_cola</a>(queue&lt;Organismo&gt; &amp;c, <a class="code" href="class_organismo.html" title="Representa la información y las operaciones asociadas a un organismo.">Organismo</a> &amp;o, <span class="keywordtype">bool</span> &amp;sobrevive)
+<a name="l00032"></a>00032 {
+<a name="l00033"></a>00033 <span class="comment">// Busca el primer organismo de la cola c que consigue matar al organismo o y</span>
+<a name="l00034"></a>00034 <span class="comment">// borra (y cuenta) todos los que resultan destruidos por éste. Para que el</span>
+<a name="l00035"></a>00035 <span class="comment">// borrado sea efectivo, los supervivientes se van añadiendo al final de la </span>
+<a name="l00036"></a>00036 <span class="comment">// cola. Al final, los que no hayan luchado se pasan al final la cola mediante</span>
+<a name="l00037"></a>00037 <span class="comment">// una nueva operación privada auxiliar: &quot;recolocar&quot;.</span>
+<a name="l00038"></a>00038 
+<a name="l00039"></a>00039    <a class="code" href="class_organismo.html" title="Representa la información y las operaciones asociadas a un organismo.">Organismo</a> actual; 
+<a name="l00040"></a>00040    <span class="keywordtype">int</span> resultado; 
+<a name="l00041"></a>00041  
+<a name="l00042"></a>00042    sobrevive = <span class="keyword">true</span>;
+<a name="l00043"></a>00043    <span class="keywordtype">int</span> long_cola = c.size();
+<a name="l00044"></a>00044   
+<a name="l00045"></a>00045 <span class="comment">// Inv: sobrevive = ninguno de los elementos visitados de C destruye a o;</span>
+<a name="l00046"></a>00046 <span class="comment">//      c = elementos no visitados de C seguidos por los elementos visitados</span>
+<a name="l00047"></a>00047 <span class="comment">//      con su contador de víctimas actualizado, excepto los que hayan muerto </span>
+<a name="l00048"></a>00048 <span class="comment">//      al enfrentarse con o, en el mismo orden en que estaban en C;</span>
+<a name="l00049"></a>00049 <span class="comment">//      long_cola = número de elementos no visitados de C;</span>
+<a name="l00050"></a>00050 <span class="comment">//      o tiene actualizado su contador de víctimas</span>
+<a name="l00051"></a>00051 <span class="comment">// </span>
+<a name="l00052"></a>00052 <span class="comment">// Cota: long_cola</span>
+<a name="l00053"></a>00053 
+<a name="l00054"></a>00054    <span class="keywordflow">while</span> (long_cola&gt;0 and sobrevive) {
+<a name="l00055"></a>00055       actual = c.front();
+<a name="l00056"></a>00056       resultado = o.<a class="code" href="class_organismo.html#a2f4573f69288fa8ec05ec709f2336a8d" title="Consultora del resultado de la lucha entre dos organismos.">lucha_organismos</a>(actual);
+<a name="l00057"></a>00057       <span class="keywordflow">switch</span> (resultado) {
+<a name="l00058"></a>00058          <span class="keywordflow">case</span> 0: {                    <span class="comment">// los dos mueren</span>
+<a name="l00059"></a>00059             sobrevive = <span class="keyword">false</span>;        <span class="comment">// no actualizamos las víctimas de actual </span>
+<a name="l00060"></a>00060             o.<a class="code" href="class_organismo.html#ae498385e40b42c4e9b11226befd6e4c6" title="Modificadora del número de víctimas.">incrementar_victimas</a>(); <span class="comment">// porque éste ya no pertenece al sistema</span>
+<a name="l00061"></a>00061             <span class="keywordflow">break</span>;
+<a name="l00062"></a>00062          } 
+<a name="l00063"></a>00063          <span class="keywordflow">case</span> 1: {                    <span class="comment">// o muere, actual sobrevive</span>
+<a name="l00064"></a>00064             sobrevive= <span class="keyword">false</span>;
+<a name="l00065"></a>00065             actual.<a class="code" href="class_organismo.html#ae498385e40b42c4e9b11226befd6e4c6" title="Modificadora del número de víctimas.">incrementar_victimas</a>();
+<a name="l00066"></a>00066             c.push(actual);
+<a name="l00067"></a>00067             <span class="keywordflow">break</span>;
+<a name="l00068"></a>00068          }
+<a name="l00069"></a>00069          <span class="keywordflow">case</span> 2: {                    <span class="comment">// o sobrevive, actual muere</span>
+<a name="l00070"></a>00070             o.<a class="code" href="class_organismo.html#ae498385e40b42c4e9b11226befd6e4c6" title="Modificadora del número de víctimas.">incrementar_victimas</a>();
+<a name="l00071"></a>00071             <span class="keywordflow">break</span>;
+<a name="l00072"></a>00072          }
+<a name="l00073"></a>00073          <span class="keywordflow">case</span> 3: {                    <span class="comment">// los dos sobreviven</span>
+<a name="l00074"></a>00074             c.push(actual);
+<a name="l00075"></a>00075             <span class="keywordflow">break</span>;
+<a name="l00076"></a>00076          }
+<a name="l00077"></a>00077       }
+<a name="l00078"></a>00078       c.pop();
+<a name="l00079"></a>00079       --long_cola;
+<a name="l00080"></a>00080    }
+<a name="l00081"></a>00081 
+<a name="l00082"></a>00082 <span class="comment">// Post1: Inv1 y (long_cola == 0 or not sobrevive)</span>
+<a name="l00083"></a>00083 
+<a name="l00084"></a>00084 <span class="comment">// Falta pasar al final de c los elementos no visitados de C (por Inv1, son</span>
+<a name="l00085"></a>00085 <span class="comment">// los long_cola primeros de c), para mantener el orden por identificador</span>
+<a name="l00086"></a>00086 
+<a name="l00087"></a>00087    <a class="code" href="class_sistema.html#a251ac725ddac0022e4845faec14004ef" title="Pasa los n primeros organismos de una cola al final de ésta, conservando el orden relativo...">recolocar</a>(long_cola,c);
+<a name="l00088"></a>00088 }
+<a name="l00089"></a>00089 
+<a name="l00090"></a><a class="code" href="class_sistema.html#a251ac725ddac0022e4845faec14004ef">00090</a> <span class="keywordtype">void</span> <a class="code" href="class_sistema.html#a251ac725ddac0022e4845faec14004ef" title="Pasa los n primeros organismos de una cola al final de ésta, conservando el orden relativo...">Sistema::recolocar</a>(<span class="keywordtype">int</span> n, queue&lt;Organismo&gt; &amp;c)
+<a name="l00091"></a>00091 {
+<a name="l00092"></a>00092   <span class="comment">// Inv:  n&lt;=N, c contiene los mismos elementos que C, pero los N-n primeros </span>
+<a name="l00093"></a>00093   <span class="comment">//       elementos de C están al final de c, en el orden relativo original;</span>
+<a name="l00094"></a>00094   <span class="comment">//       los restantes también conservan su orden relativo original</span>
+<a name="l00095"></a>00095   <span class="comment">// Cota: n</span>
+<a name="l00096"></a>00096 
+<a name="l00097"></a>00097   <span class="keywordflow">while</span> (n&gt;0) {
+<a name="l00098"></a>00098     c.push(c.front());
+<a name="l00099"></a>00099     c.pop();
+<a name="l00100"></a>00100     --n;
+<a name="l00101"></a>00101   } 
+<a name="l00102"></a>00102 }
+<a name="l00103"></a>00103 
+<a name="l00104"></a><a class="code" href="class_sistema.html#afaa4f1c2cce4c63faf03ee01265f5320">00104</a> <span class="keywordtype">void</span> <a class="code" href="class_sistema.html#afaa4f1c2cce4c63faf03ee01265f5320" title="Elimina todos los elementos de una cola de organismos.">Sistema::clear</a>(queue&lt;Organismo&gt;&amp; q)
+<a name="l00105"></a>00105 {
+<a name="l00106"></a>00106   <span class="keywordflow">while</span> (not q.empty()) q.pop();
+<a name="l00107"></a>00107 }
+<a name="l00108"></a>00108 
+<a name="l00109"></a><a class="code" href="class_sistema.html#ae670549104642dd4664ac8f794b4b1e9">00109</a> <span class="keywordtype">void</span> <a class="code" href="class_sistema.html#ae670549104642dd4664ac8f794b4b1e9" title="Operación de lectura.">Sistema::leer</a>(<span class="keywordtype">int</span> N) 
+<a name="l00110"></a>00110 {
+<a name="l00111"></a>00111 <span class="comment">// Esta operación actualiza todos los componentes de un sistema, leyéndolos</span>
+<a name="l00112"></a>00112 <span class="comment">// del canal estándar; ofrece la posiblidad de leer y almacenar algunos</span>
+<a name="l00113"></a>00113 <span class="comment">// organismos defensivos.  El número de éstos se proporciona al comienzo de</span>
+<a name="l00114"></a>00114 <span class="comment">// la operación.</span>
+<a name="l00115"></a>00115 
+<a name="l00116"></a>00116   <a class="code" href="class_sistema.html#afaa4f1c2cce4c63faf03ee01265f5320" title="Elimina todos los elementos de una cola de organismos.">clear</a>(<a class="code" href="class_sistema.html#a7311a56f7b8336096ca52a744c4d3804" title="Cola de organismos defensivos.">def</a>);
+<a name="l00117"></a>00117   <a class="code" href="class_sistema.html#afaa4f1c2cce4c63faf03ee01265f5320" title="Elimina todos los elementos de una cola de organismos.">clear</a>(<a class="code" href="class_sistema.html#a11fa1af3dde26025dd10b3ac103f426e" title="Cola de organismos malignos.">mal</a>);  
+<a name="l00118"></a>00118   <span class="keywordtype">int</span> num = readint();
+<a name="l00119"></a>00119   <a class="code" href="class_organismo.html" title="Representa la información y las operaciones asociadas a un organismo.">Organismo</a> o;
+<a name="l00120"></a>00120   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 1; i &lt;= num; ++i) {  
+<a name="l00121"></a>00121     o.<a class="code" href="class_organismo.html#a189d611401e25f603103c420d0b62e23" title="Operación de lectura.">leer</a>(N); 
+<a name="l00122"></a>00122     o.<a class="code" href="class_organismo.html#a4fa50ea637c25ee2b04bd1805ec634dc" title="Modificadora del identificador.">anadir_id</a>(i); 
+<a name="l00123"></a>00123     <span class="keywordflow">if</span> (o.<a class="code" href="class_organismo.html#aa746619493d11ed0b2eb2c75ce202ad0" title="Consultora de la malignidad del organismo.">es_maligno</a>()) <a class="code" href="class_sistema.html#a11fa1af3dde26025dd10b3ac103f426e" title="Cola de organismos malignos.">mal</a>.push(o);
+<a name="l00124"></a>00124     <span class="keywordflow">else</span> <a class="code" href="class_sistema.html#a7311a56f7b8336096ca52a744c4d3804" title="Cola de organismos defensivos.">def</a>.push(o);
+<a name="l00125"></a>00125   }
+<a name="l00126"></a>00126   <span class="keywordtype">id</span> = num+1;
+<a name="l00127"></a>00127 }
+<a name="l00128"></a>00128 
+<a name="l00129"></a><a class="code" href="class_sistema.html#a3f2a05a17345ee3be8331950fb2eedc0">00129</a> <span class="keywordtype">void</span> <a class="code" href="class_sistema.html#a3f2a05a17345ee3be8331950fb2eedc0" title="Operación de escritura.">Sistema::escribir</a>(<span class="keywordtype">bool</span> tipo, <span class="keywordtype">bool</span> estr)<span class="keyword"> const</span>
+<a name="l00130"></a>00130 <span class="keyword"></span>{
+<a name="l00131"></a>00131 <span class="comment">// Esta operación simplemente recorre la cola de los organismos pedidos,</span>
+<a name="l00132"></a>00132 <span class="comment">// proporcionando la información requerida, mediante una operación privada</span>
+<a name="l00133"></a>00133 <span class="comment">// auxiliar: &quot;escribir_sistema_cola&quot;.</span>
+<a name="l00134"></a>00134 
+<a name="l00135"></a>00135   <span class="keywordflow">if</span> (tipo) <a class="code" href="class_sistema.html#aa5e14a3c6ccd53bf61020d69e03b136d" title="Operación de escritura de una cola de organismos.">escribir_sistema_cola</a>(<a class="code" href="class_sistema.html#a7311a56f7b8336096ca52a744c4d3804" title="Cola de organismos defensivos.">def</a>, estr);
+<a name="l00136"></a>00136   <span class="keywordflow">else</span> <a class="code" href="class_sistema.html#aa5e14a3c6ccd53bf61020d69e03b136d" title="Operación de escritura de una cola de organismos.">escribir_sistema_cola</a>(<a class="code" href="class_sistema.html#a11fa1af3dde26025dd10b3ac103f426e" title="Cola de organismos malignos.">mal</a>, estr);
+<a name="l00137"></a>00137 }
+<a name="l00138"></a>00138 
+<a name="l00139"></a><a class="code" href="class_sistema.html#aa5e14a3c6ccd53bf61020d69e03b136d">00139</a> <span class="keywordtype">void</span> <a class="code" href="class_sistema.html#aa5e14a3c6ccd53bf61020d69e03b136d" title="Operación de escritura de una cola de organismos.">Sistema::escribir_sistema_cola</a>(<span class="keyword">const</span> queue&lt;Organismo&gt; &amp;c, <span class="keywordtype">bool</span> estr)
+<a name="l00140"></a>00140 {
+<a name="l00141"></a>00141   queue&lt;Organismo&gt; aux(c);
+<a name="l00142"></a>00142   <span class="keywordflow">while</span> (not aux.empty()) {
+<a name="l00143"></a>00143     aux.front().escribir(estr);
+<a name="l00144"></a>00144     aux.pop();
+<a name="l00145"></a>00145   }
+<a name="l00146"></a>00146 }
+<a name="l00147"></a>00147 
+</pre></div></div><!-- contents -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Clases</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Archivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+
+
+<hr class="footer"/><address class="footer"><small>
+Generado el Martes, 28 de Abril de 2015 19:20:16 para Caso de estudio: experimentos inmunologicos. Laboratorio de PRO2. por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.7.6.1
+</small></address>
+
+</body>
+</html>

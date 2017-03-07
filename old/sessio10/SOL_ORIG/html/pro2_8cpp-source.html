@@ -1,0 +1,68 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>Caso de estudio: experimentos inmunologicos. Laboratorio de PRO2.: Fichero Fuente pro2.cpp</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Generado por Doxygen 1.5.6 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="index.html"><span>Página&nbsp;principal</span></a></li>
+      <li><a href="annotated.html"><span>Clases</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+    <li>
+      <form action="search.php" method="get">
+        <table cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <td><label>&nbsp;Buscar&nbsp;</label></td>
+            <td><input type="text" name="query" value="" size="20" accesskey="s"/></td>
+          </tr>
+        </table>
+      </form>
+    </li>
+    </ul>
+  </div>
+<h1>pro2.cpp</h1><a href="pro2_8cpp.html">Ir a la documentación de este archivo.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 
+<a name="l00037"></a>00037 <span class="preprocessor">#include "<a class="code" href="_sistema_8hpp.html" title="Especificación de la clase Sistema.">Sistema.hpp</a>"</span>
+<a name="l00038"></a>00038 <span class="preprocessor">#include "<a class="code" href="_organismo_8hpp.html" title="Especificación de la clase Organismo.">Organismo.hpp</a>"</span> <span class="comment">// redundante, pero necesario para el diagrama</span>
+<a name="l00039"></a>00039 
+<a name="l00040"></a><a class="code" href="pro2_8cpp.html#e66f6b31b5ad750f1fe042a706a4e3d4">00040</a> <span class="keywordtype">int</span> <a class="code" href="pro2_8cpp.html#e66f6b31b5ad750f1fe042a706a4e3d4">main</a>() 
+<a name="l00041"></a>00041 {
+<a name="l00042"></a>00042   <span class="keywordtype">int</span> N = readint(); <span class="comment">//  Número de parámetros de las células</span>
+<a name="l00043"></a>00043   <a class="code" href="class_sistema.html" title="Representa el sistema donde se desarrollan los experimentos.">Sistema</a> S;
+<a name="l00044"></a>00044   S.<a class="code" href="class_sistema.html#2f75163cb64d657f82a9a481c8db74ff" title="Operación de lectura.">leer_sistema</a>(N);
+<a name="l00045"></a>00045   <span class="keywordtype">int</span> op; <span class="comment">// Código de operación</span>
+<a name="l00046"></a>00046   op = readint();
+<a name="l00047"></a>00047   <span class="keywordflow">while</span> (op != -3) {
+<a name="l00048"></a>00048     <span class="keywordflow">if</span> (op == -1 ) {
+<a name="l00049"></a>00049       <a class="code" href="class_organismo.html" title="Representa la información y las operaciones asociadas a un organismo.">Organismo</a> O;
+<a name="l00050"></a>00050       O.<a class="code" href="class_organismo.html#f39e60a75531166b33e001becf5d1764" title="Operación de lectura.">leer_organismo</a>(N);
+<a name="l00051"></a>00051       <span class="keywordtype">bool</span> sobrevive;
+<a name="l00052"></a>00052       S.<a class="code" href="class_sistema.html#6522b718fc0701d38c2e2d2c2d2e88a6" title="Modificadora que gestiona el intento de entrada de un organismo en el sistema.">anadir_organismo</a>(O, sobrevive);
+<a name="l00053"></a>00053       cout &lt;&lt; <span class="stringliteral">"Entrada del nuevo organismo"</span> &lt;&lt; endl;
+<a name="l00054"></a>00054       cout &lt;&lt; O.<a class="code" href="class_organismo.html#adcc0750f9405e7334ac6a69e4ebb1b8" title="Consultora del número de víctimas.">num_victimas</a>() &lt;&lt; <span class="stringliteral">" "</span> &lt;&lt; sobrevive &lt;&lt; endl;  
+<a name="l00055"></a>00055     } 
+<a name="l00056"></a>00056     <span class="keywordflow">else</span> <span class="keywordflow">if</span> (op == -2) {
+<a name="l00057"></a>00057       <span class="keywordtype">bool</span> tipo = readbool();     
+<a name="l00058"></a>00058       <span class="keywordtype">bool</span> estr = readbool();
+<a name="l00059"></a>00059       <span class="keywordflow">if</span> (tipo){
+<a name="l00060"></a>00060   <span class="keywordflow">if</span> (estr) cout &lt;&lt; <span class="stringliteral">"Defensivos del sistema con estructura"</span> &lt;&lt; endl;  
+<a name="l00061"></a>00061   <span class="keywordflow">else</span> cout &lt;&lt; <span class="stringliteral">"Defensivos del sistema sin estructura"</span> &lt;&lt; endl;
+<a name="l00062"></a>00062       }
+<a name="l00063"></a>00063       <span class="keywordflow">else</span> {
+<a name="l00064"></a>00064   <span class="keywordflow">if</span> (estr) cout &lt;&lt; <span class="stringliteral">"Malignos del sistema con estructura"</span> &lt;&lt; endl;
+<a name="l00065"></a>00065   <span class="keywordflow">else</span> cout &lt;&lt; <span class="stringliteral">"Malignos del sistema sin estructura"</span> &lt;&lt; endl;
+<a name="l00066"></a>00066       }
+<a name="l00067"></a>00067       S.<a class="code" href="class_sistema.html#4b481f098c0b830e253e35741a5a650d" title="Operación de escritura.">escribir_sistema</a>(tipo, estr);
+<a name="l00068"></a>00068     }
+<a name="l00069"></a>00069     op = readint();
+<a name="l00070"></a>00070   }
+<a name="l00071"></a>00071 }
+<a name="l00072"></a>00072 
+</pre></div></div>
+<hr size="1"><address style="text-align: right;"><small>Generado el Wed Apr 27 15:44:28 2011 para Caso de estudio: experimentos inmunologicos. Laboratorio de PRO2. por&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.6 </small></address>
+</body>
+</html>

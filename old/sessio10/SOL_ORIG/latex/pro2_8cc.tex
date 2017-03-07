@@ -1,0 +1,76 @@
+\hypertarget{pro2_8cc}{\section{\-Referencia del \-Archivo pro2.\-cc}
+\label{pro2_8cc}\index{pro2.\-cc@{pro2.\-cc}}
+}
+
+
+\-Programa principal.  
+
+
+\-Dependencia gráfica adjunta para pro2.\-cc\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=182pt]{pro2_8cc__incl}
+\end{center}
+\end{figure}
+\subsection*{\-Funciones}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{pro2_8cc_ae66f6b31b5ad750f1fe042a706a4e3d4}{main} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Descripción detallada}
+\-Programa principal. \-Estamos suponiendo que los datos leídos siempre son correctos, ya que no incluímos comprobaciones al respecto. \-Por último, puesto que los datos de los organismos y células son naturales (identificadores, ...) usaremos números negativos para las opciones. 
+
+\-Definición en el archivo \hyperlink{pro2_8cc_source}{pro2.\-cc}.
+
+
+
+\subsection{\-Documentación de las funciones}
+\hypertarget{pro2_8cc_ae66f6b31b5ad750f1fe042a706a4e3d4}{\index{pro2.\-cc@{pro2.\-cc}!main@{main}}
+\index{main@{main}!pro2.cc@{pro2.\-cc}}
+\subsubsection[{main}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf main} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{pro2_8cc_ae66f6b31b5ad750f1fe042a706a4e3d4}
+
+
+\-Definición en la línea 40 del archivo pro2.\-cc.
+
+
+\begin{DoxyCode}
+{
+  int N = readint(); //  Número de parámetros de las células
+  Sistema S;
+  S.leer(N);
+  int op; // Código de operación
+  op = readint();
+  while (op != -3) {
+    if (op == -1 ) {
+      Organismo O;
+      O.leer(N);
+      bool sobrevive;
+      S.anadir_organismo(O, sobrevive);
+      cout << "Entrada del nuevo organismo" << endl;
+      cout << O.num_victimas() << " " << sobrevive << endl;  
+    } 
+    else if (op == -2) {
+      bool tipo = readbool();     
+      bool estr = readbool();
+      if (tipo){
+  if (estr) cout << "Defensivos del sistema con estructura" << endl;  
+  else cout << "Defensivos del sistema sin estructura" << endl;
+      }
+      else {
+  if (estr) cout << "Malignos del sistema con estructura" << endl;
+  else cout << "Malignos del sistema sin estructura" << endl;
+      }
+      S.escribir(tipo, estr);
+    }
+    op = readint();
+  }
+}
+\end{DoxyCode}

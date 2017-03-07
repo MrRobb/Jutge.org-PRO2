@@ -1,0 +1,29 @@
+La matriz
+
+0  6  2  0                                
+0  0  0  0       
+0  1  0  2 
+0  0  5  0  
+
+se almacena así
+
+(1 6) (2 2) 
+                <---  lista vacia
+(1 1) (3 2)
+(2 5)
+
+pero la instrucción de lectura espera los datos así
+
+2 1 6 2 2  : 2 elementos en la fil 0: 6 en la col 1, 2 en la col 2 
+0          : 0 elementos en la fil 1
+2 1 1 3 2  : 2 elementos en la fil 2: 1 en la col 1, 2 en la col 3 
+1 2 5      : 1 elemento en la fil 3: 5 en la col 2
+ 
+La instrucción de escritura ha de mostrar las posiciones de valor 0, 
+de la manera habitual:
+
+0  6  2  0                                
+0  0  0  0       
+0  1  0  2 
+0  0  5  0  
+

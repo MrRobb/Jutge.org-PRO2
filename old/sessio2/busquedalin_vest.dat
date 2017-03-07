@@ -1,0 +1,30 @@
+3
+111 1.11
+222 345
+333 3.33
+
+444
+
+El estudiante no está en el vector
+
+------------------------------------
+
+3
+111 1.11
+222 345
+333 3.33
+
+222
+
+El estudiante está en el vector, pero no tiene nota
+
+------------------------------------
+
+3
+111 1.11
+222 345
+333 3.33
+
+333
+
+El estudiante está en el vector y su nota es 3.33

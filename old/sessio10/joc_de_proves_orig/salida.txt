@@ -1,0 +1,34 @@
+Defensivos del sistema sin estructura
+1 0
+2 0
+Malignos del sistema sin estructura
+Entrada del nuevo organismo
+0 1
+Defensivos del sistema sin estructura
+1 0
+2 0
+Malignos del sistema sin estructura
+3 0
+Entrada del nuevo organismo
+1 1
+Defensivos del sistema sin estructura
+1 0
+2 0
+4 1
+Malignos del sistema sin estructura
+Entrada del nuevo organismo
+0 1
+Defensivos del sistema sin estructura
+1 0
+2 0
+4 1
+5 0
+Malignos del sistema sin estructura
+Entrada del nuevo organismo
+1 1
+Defensivos del sistema con estructura
+1 0 8 6 1 3
+4 1 5 9 3
+5 0 1 4 3 8
+Malignos del sistema con estructura
+6 1 2 5 1 7

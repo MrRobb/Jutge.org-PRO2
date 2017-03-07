@@ -1,0 +1,75 @@
+\hypertarget{pro2_8cpp}{\section{Referencia del Archivo pro2.\-cpp}
+\label{pro2_8cpp}\index{pro2.\-cpp@{pro2.\-cpp}}
+}
+Dependencia gráfica adjunta para pro2.\-cpp\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=220pt]{pro2_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{pro2_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Documentación de las funciones}
+\hypertarget{pro2_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{\index{pro2.\-cpp@{pro2.\-cpp}!main@{main}}
+\index{main@{main}!pro2.cpp@{pro2.\-cpp}}
+\subsubsection[{main}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{pro2_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}
+
+
+Definición en la línea 5 del archivo pro2.\-cpp.
+
+
+\begin{DoxyCode}
+\{
+  \hyperlink{class_cubeta}{Cubeta} c;
+  \hyperlink{class_lavadora}{Lavadora} l;
+  \textcolor{keywordtype}{int} op, pes;
+  \textcolor{keywordtype}{bool} col;
+
+  cin >> op;
+  \textcolor{keywordflow}{while} (op!=-8)\{
+      \textcolor{keywordflow}{if} (op==-1)\{
+        pes = readint();
+        col = readbool();
+        l.\hyperlink{class_lavadora_ad43871786bb680e22552103bc23adc71}{inicializar\_lavadora}(pes,col);
+      \}
+      \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (op==-2)\{
+      pes = readint();
+      col = readbool();
+      \hyperlink{class_prenda}{Prenda} p(pes,col);
+      l.\hyperlink{class_lavadora_a7e465e1f11ba5ba3cffcee1ce9507e79}{anadir\_prenda}(p);
+      \}
+      \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (op==-3)\{
+      pes=readint();
+      col=readbool();
+      \hyperlink{class_prenda}{Prenda} p(pes,col);
+      c.\hyperlink{class_cubeta_a431873df8f99cebe56b4787a5271e395}{anadir\_prenda}(p);
+      \}
+      \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (op ==-4) \{
+          c.\hyperlink{class_cubeta_a3586257f2f2eacefc47714c6a3a01875}{completar\_lavadora}(l);
+      \}
+      \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (op ==-5) \{
+          l.\hyperlink{class_lavadora_a82bd403e688482030fcb95f0c3fd62d1}{lavado}();
+      \}
+      \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (op ==-6) \{
+      cout << \textcolor{stringliteral}{"   Cubeta: "} << endl;
+      c.\hyperlink{class_cubeta_a878904c34f1b3361c3913bbaf735ed12}{escribir}();
+      \}
+      \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (op ==-7) \{
+      cout << \textcolor{stringliteral}{"   Lavadora: "} << endl;
+      l.\hyperlink{class_lavadora_a137b1b3b53ce1cce3b3d112616b4a247}{escribir}();
+      \}
+
+      op = readint();
+  \}
+\}
+\end{DoxyCode}
