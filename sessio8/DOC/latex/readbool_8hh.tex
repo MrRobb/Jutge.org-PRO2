@@ -1,0 +1,55 @@
+\hypertarget{readbool_8hh}{\section{Referencia del Archivo readbool.\+hh}
+\label{readbool_8hh}\index{readbool.\+hh@{readbool.\+hh}}
+}
+
+
+operacion para leer booleanos del canal estandar  
+
+
+\subsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{readbool_8hh_a56691e176645da552c107ef124ad701a}{readbool} ()
+\begin{DoxyCompactList}\small\item\em Lee un booleano por el canal estandar. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+operacion para leer booleanos del canal estandar 
+
+
+
+Definición en el archivo \hyperlink{readbool_8hh_source}{readbool.\+hh}.
+
+
+
+\subsection{Documentación de las funciones}
+\hypertarget{readbool_8hh_a56691e176645da552c107ef124ad701a}{\index{readbool.\+hh@{readbool.\+hh}!readbool@{readbool}}
+\index{readbool@{readbool}!readbool.\+hh@{readbool.\+hh}}
+\subsubsection[{readbool}]{\setlength{\rightskip}{0pt plus 5cm}bool readbool (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{readbool_8hh_a56691e176645da552c107ef124ad701a}
+
+
+Lee un booleano por el canal estandar. 
+
+\begin{DoxyPrecond}{Precondición}
+La primera string valida del canal estandar es \char`\"{}true\char`\"{} o \char`\"{}false\char`\"{} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultado es cierto si se ha leido \char`\"{}true\char`\"{} y falso si no 
+\end{DoxyPostcond}
+
+
+Definición en la línea 17 del archivo readbool.\+hh.
+
+
+\begin{DoxyCode}
+18 \{
+19   \textcolor{keywordtype}{string} n;
+20   cin >> n;
+21   \textcolor{keywordflow}{if} (n!=\textcolor{stringliteral}{"true"} and n!=\textcolor{stringliteral}{"false"}) \textcolor{keywordflow}{throw} PRO2Excepcio(\textcolor{stringliteral}{"S'havia de llegir un boolea"});
+22   \textcolor{keywordflow}{return} (n==\textcolor{stringliteral}{"true"});
+23 \}
+\end{DoxyCode}

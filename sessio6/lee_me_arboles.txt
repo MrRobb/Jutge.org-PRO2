@@ -1,0 +1,4 @@
+Esta sesión tiene una parte dedicada a mostrar el funcionamiento de la
+clase Arbre (arbol binario, generica)
+
+La carpeta con los materiales necesarios se llama "arbres"

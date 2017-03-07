@@ -1,0 +1,6 @@
+Esta sesión tiene una parte dedicada a mostrar el funcionamiento de las
+clases "stack" y "queue" (pilas y colas)
+
+La carpeta con los materiales necesarios se llama "piles_i_cues"
+
+Hay ejercicios de pilas y colas en el jutge

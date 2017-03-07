@@ -1,0 +1,55 @@
+\select@language {spanish}
+\contentsline {chapter}{\numberline {1}Ejemplo de dise\IeC {\~n}o modular\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}: Gesti\IeC {\'o}n de una lavadora.}{1}{chapter.1}
+\contentsline {chapter}{\numberline {2}\IeC {\'I}ndice de clases}{3}{chapter.2}
+\contentsline {section}{\numberline {2.1}Lista de clases}{3}{section.2.1}
+\contentsline {chapter}{\numberline {3}Indice de archivos}{5}{chapter.3}
+\contentsline {section}{\numberline {3.1}Lista de archivos}{5}{section.3.1}
+\contentsline {chapter}{\numberline {4}Documentaci\IeC {\'o}n de las clases}{7}{chapter.4}
+\contentsline {section}{\numberline {4.1}Referencia de la Clase Cubeta}{7}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Descripci\IeC {\'o}n detallada}{7}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Documentaci\IeC {\'o}n del constructor y destructor}{7}{subsection.4.1.2}
+\contentsline {subsubsection}{\numberline {4.1.2.1}Cubeta}{7}{subsubsection.4.1.2.1}
+\contentsline {subsubsection}{\numberline {4.1.2.2}Cubeta}{8}{subsubsection.4.1.2.2}
+\contentsline {subsection}{\numberline {4.1.3}Documentaci\IeC {\'o}n de las funciones miembro}{8}{subsection.4.1.3}
+\contentsline {subsubsection}{\numberline {4.1.3.1}anadir\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}prenda}{8}{subsubsection.4.1.3.1}
+\contentsline {subsubsection}{\numberline {4.1.3.2}completar\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}lavadora}{8}{subsubsection.4.1.3.2}
+\contentsline {subsubsection}{\numberline {4.1.3.3}escribir}{9}{subsubsection.4.1.3.3}
+\contentsline {section}{\numberline {4.2}Referencia de la Clase Lavadora}{9}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Descripci\IeC {\'o}n detallada}{9}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Documentaci\IeC {\'o}n del constructor y destructor}{10}{subsection.4.2.2}
+\contentsline {subsubsection}{\numberline {4.2.2.1}Lavadora}{10}{subsubsection.4.2.2.1}
+\contentsline {subsection}{\numberline {4.2.3}Documentaci\IeC {\'o}n de las funciones miembro}{10}{subsection.4.2.3}
+\contentsline {subsubsection}{\numberline {4.2.3.1}inicializar}{10}{subsubsection.4.2.3.1}
+\contentsline {subsubsection}{\numberline {4.2.3.2}anadir\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}prenda}{10}{subsubsection.4.2.3.2}
+\contentsline {subsubsection}{\numberline {4.2.3.3}lavado}{10}{subsubsection.4.2.3.3}
+\contentsline {subsubsection}{\numberline {4.2.3.4}esta\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}inicializada}{11}{subsubsection.4.2.3.4}
+\contentsline {subsubsection}{\numberline {4.2.3.5}consultar\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}color}{11}{subsubsection.4.2.3.5}
+\contentsline {subsubsection}{\numberline {4.2.3.6}consultar\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}peso}{11}{subsubsection.4.2.3.6}
+\contentsline {subsubsection}{\numberline {4.2.3.7}consultar\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}peso\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}maximo}{11}{subsubsection.4.2.3.7}
+\contentsline {subsubsection}{\numberline {4.2.3.8}escribir}{12}{subsubsection.4.2.3.8}
+\contentsline {section}{\numberline {4.3}Referencia de la Clase Prenda}{12}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Descripci\IeC {\'o}n detallada}{12}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Documentaci\IeC {\'o}n del constructor y destructor}{12}{subsection.4.3.2}
+\contentsline {subsubsection}{\numberline {4.3.2.1}Prenda}{12}{subsubsection.4.3.2.1}
+\contentsline {subsubsection}{\numberline {4.3.2.2}Prenda}{13}{subsubsection.4.3.2.2}
+\contentsline {subsection}{\numberline {4.3.3}Documentaci\IeC {\'o}n de las funciones miembro}{13}{subsection.4.3.3}
+\contentsline {subsubsection}{\numberline {4.3.3.1}modificar}{13}{subsubsection.4.3.3.1}
+\contentsline {subsubsection}{\numberline {4.3.3.2}consul\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}peso}{13}{subsubsection.4.3.3.2}
+\contentsline {subsubsection}{\numberline {4.3.3.3}consul\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}color}{13}{subsubsection.4.3.3.3}
+\contentsline {subsubsection}{\numberline {4.3.3.4}escribir}{14}{subsubsection.4.3.3.4}
+\contentsline {chapter}{\numberline {5}Documentaci\IeC {\'o}n de archivos}{15}{chapter.5}
+\contentsline {section}{\numberline {5.1}Referencia del Archivo Cubeta.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}hh}{15}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Descripci\IeC {\'o}n detallada}{15}{subsection.5.1.1}
+\contentsline {section}{\numberline {5.2}Referencia del Archivo Lavadora.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}hh}{16}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Descripci\IeC {\'o}n detallada}{16}{subsection.5.2.1}
+\contentsline {section}{\numberline {5.3}Referencia del Archivo Prenda.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}hh}{16}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Descripci\IeC {\'o}n detallada}{16}{subsection.5.3.1}
+\contentsline {section}{\numberline {5.4}Referencia del Archivo pro2\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}s8.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}cc}{16}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}Descripci\IeC {\'o}n detallada}{17}{subsection.5.4.1}
+\contentsline {subsection}{\numberline {5.4.2}Documentaci\IeC {\'o}n de las funciones}{17}{subsection.5.4.2}
+\contentsline {subsubsection}{\numberline {5.4.2.1}main}{17}{subsubsection.5.4.2.1}
+\contentsline {section}{\numberline {5.5}Referencia del Archivo readbool.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}hh}{17}{section.5.5}
+\contentsline {subsection}{\numberline {5.5.1}Descripci\IeC {\'o}n detallada}{18}{subsection.5.5.1}
+\contentsline {subsection}{\numberline {5.5.2}Documentaci\IeC {\'o}n de las funciones}{18}{subsection.5.5.2}
+\contentsline {subsubsection}{\numberline {5.5.2.1}readbool}{18}{subsubsection.5.5.2.1}
+\contentsline {chapter}{\IeC {\'I}ndice}{19}{section*.10}

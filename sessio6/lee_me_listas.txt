@@ -1,0 +1,6 @@
+Esta sesión tiene una parte dedicada a mostrar el funcionamiento de la
+clase list (lista)
+
+La carpeta con los materiales necesarios se llama "llistes"
+
+Hay ejercicios de listas en el jutge

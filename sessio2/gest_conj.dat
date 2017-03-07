@@ -1,0 +1,86 @@
+Entrada comentada:
+
+3                                    // leer un conjunto de 3 estudiantes
+444 4.44 
+222 2.22
+111 323
+
+-5                                   // escribir el conjunto
+
+-2 111                               // consultar la nota de 111
+
+-3 111 1.11                          // modificar la nota de 111
+
+-5                                   // escribir el conjunto
+
+-2 111                               // consultar la nota de 111
+
+-2 555                               // consultar la nota de 555
+
+-1 111 4                             // añadir un estudiante
+
+-3 555 5                             // modificar la nota de 555
+
+-5                                   // escribir el conjunto
+
+-4                                   // redondear el conjunto
+
+-5                                   // escribir el conjunto
+
+-1 777 777                           // añadir un estudiante
+
+-5                                   // escribir el conjunto
+
+-1 333 3.22                          // añadir un estudiante
+
+-3 333 3.33                          // modificar la nota de 333
+
+-4                                   // redondear el conjunto
+
+-5                                   // escribir el conjunto
+
+-6                                   // salir de la aplicación
+               
+Entrada sin comentar:
+
+3              
+444 4.44       
+222 2.22       
+111 323	       
+	       
+-5             
+
+-2 111
+	       
+-3 111 1.11    
+	       
+-5             
+	       
+-2 111         
+	       
+-2 555         
+	       
+-1 111 4       
+	       
+-3 555 5       
+	       
+-5             
+	       
+-4             
+	       
+-5             
+	       
+-1 777 777    
+	       
+-5             
+	       
+-1 333 3.22    
+	       
+-3 333 3.33    
+	       
+-4             
+	       
+-5             
+	       
+-6             
+               

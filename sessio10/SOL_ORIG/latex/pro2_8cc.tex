@@ -1,0 +1,78 @@
+\hypertarget{pro2_8cc}{\section{Referencia del Archivo pro2.\+cc}
+\label{pro2_8cc}\index{pro2.\+cc@{pro2.\+cc}}
+}
+
+
+Programa principal.  
+
+
+Dependencia gráfica adjunta para pro2.\+cc\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{pro2_8cc__incl}
+\end{center}
+\end{figure}
+\subsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{pro2_8cc_ae66f6b31b5ad750f1fe042a706a4e3d4}{main} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+Programa principal. 
+
+Estamos suponiendo que los datos leídos siempre son correctos, ya que no incluímos comprobaciones al respecto. Por último, puesto que los datos de los organismos y células son naturales (identificadores, ...) usaremos números negativos para las opciones. 
+
+Definición en el archivo \hyperlink{pro2_8cc_source}{pro2.\+cc}.
+
+
+
+\subsection{Documentación de las funciones}
+\hypertarget{pro2_8cc_ae66f6b31b5ad750f1fe042a706a4e3d4}{\index{pro2.\+cc@{pro2.\+cc}!main@{main}}
+\index{main@{main}!pro2.\+cc@{pro2.\+cc}}
+\subsubsection[{main}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{pro2_8cc_ae66f6b31b5ad750f1fe042a706a4e3d4}
+
+
+Definición en la línea 45 del archivo pro2.\+cc.
+
+
+\begin{DoxyCode}
+46 \{
+47   \textcolor{keywordtype}{int} N; \textcolor{comment}{//  Número de parámetros de las células}
+48   cin >> N; 
+49   \hyperlink{class_sistema}{Sistema} S;
+50   S.\hyperlink{class_sistema_ae670549104642dd4664ac8f794b4b1e9}{leer}(N);
+51   \textcolor{keywordtype}{int} op; \textcolor{comment}{// Código de operación}
+52   cin >> op;
+53   \textcolor{keywordflow}{while} (op != -3) \{
+54     \textcolor{keywordflow}{if} (op == -1 ) \{
+55       \hyperlink{class_organismo}{Organismo} O;
+56       O.\hyperlink{class_organismo_a189d611401e25f603103c420d0b62e23}{leer}(N);
+57       \textcolor{keywordtype}{bool} sobrevive;
+58       S.\hyperlink{class_sistema_a6522b718fc0701d38c2e2d2c2d2e88a6}{anadir\_organismo}(O, sobrevive);
+59       cout << \textcolor{stringliteral}{"Entrada del nuevo organismo"} << endl;
+60       cout << O.\hyperlink{class_organismo_aadcc0750f9405e7334ac6a69e4ebb1b8}{num\_victimas}() << \textcolor{stringliteral}{" "} << sobrevive << endl;  
+61     \} 
+62     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (op == -2) \{
+63       \textcolor{keywordtype}{bool} tipo = \hyperlink{readbool_8hh_a56691e176645da552c107ef124ad701a}{readbool}();     
+64       \textcolor{keywordtype}{bool} estr = \hyperlink{readbool_8hh_a56691e176645da552c107ef124ad701a}{readbool}();
+65       \textcolor{keywordflow}{if} (tipo)\{
+66   \textcolor{keywordflow}{if} (estr) cout << \textcolor{stringliteral}{"Defensivos del sistema con estructura"} << endl;  
+67   \textcolor{keywordflow}{else} cout << \textcolor{stringliteral}{"Defensivos del sistema sin estructura"} << endl;
+68       \}
+69       \textcolor{keywordflow}{else} \{
+70   \textcolor{keywordflow}{if} (estr) cout << \textcolor{stringliteral}{"Malignos del sistema con estructura"} << endl;
+71   \textcolor{keywordflow}{else} cout << \textcolor{stringliteral}{"Malignos del sistema sin estructura"} << endl;
+72       \}
+73       S.\hyperlink{class_sistema_a3f2a05a17345ee3be8331950fb2eedc0}{escribir}(tipo, estr);
+74     \}
+75     cin >> op;
+76   \}
+77 \}
+\end{DoxyCode}

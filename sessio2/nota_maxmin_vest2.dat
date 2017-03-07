@@ -1,0 +1,29 @@
+// Entrada:
+
+5
+
+111 2.22
+222 1.11
+333 435
+444 6.67
+555 5.89
+
+// Salida:
+
+estudiante con nota max: 444 6.67
+estudiante con nota min: 222 1.11
+
+// Otro ejemplo, con repeticiones de notas
+
+5
+
+333 1.11
+222 1.11
+555 5.55
+444 5.55
+666 43
+
+estudiante con nota max: 444 5.55
+estudiante con nota min: 222 1.11
+
+// probad otras situaciones más complejas

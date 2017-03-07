@@ -1,0 +1,28 @@
+// Entrada:
+
+// Si existe al menos un estudiante con nota, se usa el criterio de la 
+// versión anterior (los NP no cuentan)
+
+5
+
+333 1.11
+222 1.11
+555 5.55
+444 5.55
+666 43
+
+estudiante con nota max: 444 5.55
+estudiante con nota min: 222 1.11
+
+// En caso contrario, hay que escribir un mensaje informativo
+
+
+5
+
+333 11
+222 -1
+555 55
+444 555
+666 43
+
+no hay ningun estudiante con nota

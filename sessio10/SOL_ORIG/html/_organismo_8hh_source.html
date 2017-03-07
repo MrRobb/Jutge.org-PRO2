@@ -1,0 +1,182 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.8"/>
+<title>Laboratorio de PRO2. Caso de estudio: experimentos inmunologicos.: Fichero Fuente Organismo.hh</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Laboratorio de PRO2. Caso de estudio: experimentos inmunologicos.
+   &#160;<span id="projectnumber">v6.0 27-04-2016</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.8 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="annotated.html"><span>Clases</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;archivos</span></a></li>
+      <li><a href="globals.html"><span>Miembros&#160;de&#160;los&#160;ficheros</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Clases</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Archivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Organismo.hh</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_organismo_8hh.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifndef _ORGANISMO_</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#define _ORGANISMO_</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_celula_8hh.html">Celula.hh</a>&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#ifndef NO_DIAGRAM</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;Arbre.hh&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="readbool_8hh.html">readbool.hh</a>&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> * Clase Organismo</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_organismo.html">   26</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_organismo.html">Organismo</a> {</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="comment">// Descripción: contiene la estructura celular y las operaciones de un organismo</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="comment">/* Un Organismo se representa mediante sus estructura celular, que tendrá</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">     forma arborescente, su identificador, su condición o no de maligno y su </span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">     número de víctimas. */</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="class_organismo.html#abfafb8e55144e295b406ce90951f0c68">   37</a></span>&#160;  Arbre&lt;Celula&gt; <a class="code" href="class_organismo.html#abfafb8e55144e295b406ce90951f0c68">celulas</a>; <span class="comment">// </span></div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="class_organismo.html#a30be1823d3711fec651a5a4b1dc1cee5">   39</a></span>&#160;<span class="comment"></span>  <span class="keywordtype">int</span> <a class="code" href="class_organismo.html#a30be1823d3711fec651a5a4b1dc1cee5">id</a>; </div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="class_organismo.html#a85a5d1b9d31fa209d1ed0d596dbbed61">   41</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="class_organismo.html#a85a5d1b9d31fa209d1ed0d596dbbed61">maligno</a>; <span class="comment">// </span></div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="class_organismo.html#abb3e56487a080df544a6ff96e5e42520">   43</a></span>&#160;<span class="comment"></span>  <span class="keywordtype">int</span> <a class="code" href="class_organismo.html#abb3e56487a080df544a6ff96e5e42520">victimas</a>; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="comment">// Constructora</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment"></span>  <a class="code" href="class_organismo.html#aa5dbeed205b53c0e555ef2a6456da144">Organismo</a>();  </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="comment">// Modificadoras</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_organismo.html#a4fa50ea637c25ee2b04bd1805ec634dc">anadir_id</a>(<span class="keywordtype">int</span> <span class="keywordtype">id</span>);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_organismo.html#ae498385e40b42c4e9b11226befd6e4c6">incrementar_victimas</a>();</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="comment">// Consultoras</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="keywordtype">int</span> <a class="code" href="class_organismo.html#a2f4573f69288fa8ec05ec709f2336a8d">lucha_organismos</a>(<span class="keyword">const</span> <a class="code" href="class_organismo.html">Organismo</a> &amp;o2) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="class_organismo.html#aa746619493d11ed0b2eb2c75ce202ad0">es_maligno</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <span class="keywordtype">int</span> <a class="code" href="class_organismo.html#aadcc0750f9405e7334ac6a69e4ebb1b8">num_victimas</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <span class="comment">// Entrada / Salida</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="comment"></span>  <span class="keywordtype">void</span> <a class="code" href="class_organismo.html#a189d611401e25f603103c420d0b62e23">leer</a>(<span class="keywordtype">int</span> N);</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_organismo.html#aaa66fa8430c7413c3960472961721b8b">escribir</a>(<span class="keywordtype">bool</span> estr) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="class_organismo.html#ac483b268b68eed06f612ed690c22af8f">simetricos</a>(Arbre&lt;Celula&gt; &amp;a1, Arbre&lt;Celula&gt; &amp;a2);</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="keyword">static</span> pair&lt;int,int&gt; <a class="code" href="class_organismo.html#aaf643a47840f855ed3e105970f75a078">lucha_arboles</a>(Arbre&lt;Celula&gt; &amp;a1, Arbre&lt;Celula&gt; &amp;a2);</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_organismo.html#abf016c166b00ca0f7016afd44d282913">leer_arbol_celulas</a>(<span class="keywordtype">int</span> N, Arbre&lt;Celula&gt; &amp;a);</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_organismo.html#ad29f7f44a5694136d0a3990581426cf0">escribir_arbol_celulas_id</a>(Arbre&lt;Celula&gt; &amp;a);</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;};</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;</div>
+<div class="ttc" id="class_organismo_html_aa5dbeed205b53c0e555ef2a6456da144"><div class="ttname"><a href="class_organismo.html#aa5dbeed205b53c0e555ef2a6456da144">Organismo::Organismo</a></div><div class="ttdeci">Organismo()</div><div class="ttdoc">Creadora por defecto. </div><div class="ttdef"><b>Definition:</b> <a href="_organismo_8cc_source.html#l00011">Organismo.cc:11</a></div></div>
+<div class="ttc" id="class_organismo_html_a30be1823d3711fec651a5a4b1dc1cee5"><div class="ttname"><a href="class_organismo.html#a30be1823d3711fec651a5a4b1dc1cee5">Organismo::id</a></div><div class="ttdeci">int id</div><div class="ttdoc">Identificador del organismo. </div><div class="ttdef"><b>Definition:</b> <a href="_organismo_8hh_source.html#l00039">Organismo.hh:39</a></div></div>
+<div class="ttc" id="class_organismo_html_abfafb8e55144e295b406ce90951f0c68"><div class="ttname"><a href="class_organismo.html#abfafb8e55144e295b406ce90951f0c68">Organismo::celulas</a></div><div class="ttdeci">Arbre&lt; Celula &gt; celulas</div><div class="ttdoc">Estructura celular del organismo. </div><div class="ttdef"><b>Definition:</b> <a href="_organismo_8hh_source.html#l00037">Organismo.hh:37</a></div></div>
+<div class="ttc" id="class_organismo_html_ac483b268b68eed06f612ed690c22af8f"><div class="ttname"><a href="class_organismo.html#ac483b268b68eed06f612ed690c22af8f">Organismo::simetricos</a></div><div class="ttdeci">static bool simetricos(Arbre&lt; Celula &gt; &amp;a1, Arbre&lt; Celula &gt; &amp;a2)</div><div class="ttdoc">Comprobación de simetría de dos árboles. </div><div class="ttdef"><b>Definition:</b> <a href="_organismo_8cc_source.html#l00057">Organismo.cc:57</a></div></div>
+<div class="ttc" id="class_organismo_html_a4fa50ea637c25ee2b04bd1805ec634dc"><div class="ttname"><a href="class_organismo.html#a4fa50ea637c25ee2b04bd1805ec634dc">Organismo::anadir_id</a></div><div class="ttdeci">void anadir_id(int id)</div><div class="ttdoc">Modificadora del identificador. </div><div class="ttdef"><b>Definition:</b> <a href="_organismo_8cc_source.html#l00023">Organismo.cc:23</a></div></div>
+<div class="ttc" id="class_organismo_html_abb3e56487a080df544a6ff96e5e42520"><div class="ttname"><a href="class_organismo.html#abb3e56487a080df544a6ff96e5e42520">Organismo::victimas</a></div><div class="ttdeci">int victimas</div><div class="ttdoc">Número de víctimas del organismo. </div><div class="ttdef"><b>Definition:</b> <a href="_organismo_8hh_source.html#l00043">Organismo.hh:43</a></div></div>
+<div class="ttc" id="class_organismo_html_aaa66fa8430c7413c3960472961721b8b"><div class="ttname"><a href="class_organismo.html#aaa66fa8430c7413c3960472961721b8b">Organismo::escribir</a></div><div class="ttdeci">void escribir(bool estr) const </div><div class="ttdoc">Operación de escritura. </div><div class="ttdef"><b>Definition:</b> <a href="_organismo_8cc_source.html#l00146">Organismo.cc:146</a></div></div>
+<div class="ttc" id="class_organismo_html_a2f4573f69288fa8ec05ec709f2336a8d"><div class="ttname"><a href="class_organismo.html#a2f4573f69288fa8ec05ec709f2336a8d">Organismo::lucha_organismos</a></div><div class="ttdeci">int lucha_organismos(const Organismo &amp;o2) const </div><div class="ttdoc">Consultora del resultado de la lucha entre dos organismos. </div><div class="ttdef"><b>Definition:</b> <a href="_organismo_8cc_source.html#l00028">Organismo.cc:28</a></div></div>
+<div class="ttc" id="class_organismo_html_ad29f7f44a5694136d0a3990581426cf0"><div class="ttname"><a href="class_organismo.html#ad29f7f44a5694136d0a3990581426cf0">Organismo::escribir_arbol_celulas_id</a></div><div class="ttdeci">static void escribir_arbol_celulas_id(Arbre&lt; Celula &gt; &amp;a)</div><div class="ttdoc">Operación de escritura de un árbol de células. </div><div class="ttdef"><b>Definition:</b> <a href="_organismo_8cc_source.html#l00159">Organismo.cc:159</a></div></div>
+<div class="ttc" id="readbool_8hh_html"><div class="ttname"><a href="readbool_8hh.html">readbool.hh</a></div><div class="ttdoc">operacion para leer booleanos del canal estandar </div></div>
+<div class="ttc" id="class_organismo_html_a189d611401e25f603103c420d0b62e23"><div class="ttname"><a href="class_organismo.html#a189d611401e25f603103c420d0b62e23">Organismo::leer</a></div><div class="ttdeci">void leer(int N)</div><div class="ttdoc">Operación de lectura. </div><div class="ttdef"><b>Definition:</b> <a href="_organismo_8cc_source.html#l00119">Organismo.cc:119</a></div></div>
+<div class="ttc" id="class_organismo_html_aaf643a47840f855ed3e105970f75a078"><div class="ttname"><a href="class_organismo.html#aaf643a47840f855ed3e105970f75a078">Organismo::lucha_arboles</a></div><div class="ttdeci">static pair&lt; int, int &gt; lucha_arboles(Arbre&lt; Celula &gt; &amp;a1, Arbre&lt; Celula &gt; &amp;a2)</div><div class="ttdoc">Lucha de dos árboles de células. </div><div class="ttdef"><b>Definition:</b> <a href="_organismo_8cc_source.html#l00074">Organismo.cc:74</a></div></div>
+<div class="ttc" id="_celula_8hh_html"><div class="ttname"><a href="_celula_8hh.html">Celula.hh</a></div><div class="ttdoc">Especificación de la clase Celula. </div></div>
+<div class="ttc" id="class_organismo_html_aa746619493d11ed0b2eb2c75ce202ad0"><div class="ttname"><a href="class_organismo.html#aa746619493d11ed0b2eb2c75ce202ad0">Organismo::es_maligno</a></div><div class="ttdeci">bool es_maligno() const </div><div class="ttdoc">Consultora de la malignidad del organismo. </div><div class="ttdef"><b>Definition:</b> <a href="_organismo_8cc_source.html#l00107">Organismo.cc:107</a></div></div>
+<div class="ttc" id="class_organismo_html"><div class="ttname"><a href="class_organismo.html">Organismo</a></div><div class="ttdoc">Representa la información y las operaciones asociadas a un organismo. </div><div class="ttdef"><b>Definition:</b> <a href="_organismo_8hh_source.html#l00026">Organismo.hh:26</a></div></div>
+<div class="ttc" id="class_organismo_html_a85a5d1b9d31fa209d1ed0d596dbbed61"><div class="ttname"><a href="class_organismo.html#a85a5d1b9d31fa209d1ed0d596dbbed61">Organismo::maligno</a></div><div class="ttdeci">bool maligno</div><div class="ttdoc">Indica si es maligno (true) o defensivo (false) </div><div class="ttdef"><b>Definition:</b> <a href="_organismo_8hh_source.html#l00041">Organismo.hh:41</a></div></div>
+<div class="ttc" id="class_organismo_html_ae498385e40b42c4e9b11226befd6e4c6"><div class="ttname"><a href="class_organismo.html#ae498385e40b42c4e9b11226befd6e4c6">Organismo::incrementar_victimas</a></div><div class="ttdeci">void incrementar_victimas()</div><div class="ttdoc">Modificadora del número de víctimas. </div><div class="ttdef"><b>Definition:</b> <a href="_organismo_8cc_source.html#l00018">Organismo.cc:18</a></div></div>
+<div class="ttc" id="class_organismo_html_aadcc0750f9405e7334ac6a69e4ebb1b8"><div class="ttname"><a href="class_organismo.html#aadcc0750f9405e7334ac6a69e4ebb1b8">Organismo::num_victimas</a></div><div class="ttdeci">int num_victimas() const </div><div class="ttdoc">Consultora del número de víctimas. </div><div class="ttdef"><b>Definition:</b> <a href="_organismo_8cc_source.html#l00113">Organismo.cc:113</a></div></div>
+<div class="ttc" id="class_organismo_html_abf016c166b00ca0f7016afd44d282913"><div class="ttname"><a href="class_organismo.html#abf016c166b00ca0f7016afd44d282913">Organismo::leer_arbol_celulas</a></div><div class="ttdeci">static void leer_arbol_celulas(int N, Arbre&lt; Celula &gt; &amp;a)</div><div class="ttdoc">Operación de lectura de un árbol de células. </div><div class="ttdef"><b>Definition:</b> <a href="_organismo_8cc_source.html#l00134">Organismo.cc:134</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado el Miércoles, 27 de Abril de 2016 09:45:08 para Laboratorio de PRO2. Caso de estudio: experimentos inmunologicos. por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.8
+</small></address>
+</body>
+</html>

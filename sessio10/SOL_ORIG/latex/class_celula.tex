@@ -1,0 +1,361 @@
+\hypertarget{class_celula}{\section{Referencia de la Clase Celula}
+\label{class_celula}\index{Celula@{Celula}}
+}
+
+
+Representa el conjunto de características y operaciones de las células.  
+
+
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_celula_a3c5017fbcec8cb564acc666aa7e21206}{Celula} ()
+\begin{DoxyCompactList}\small\item\em Creadora por defecto. \end{DoxyCompactList}\item 
+int \hyperlink{class_celula_a3dd8be98f1548b02696e2fc32b8d19b4}{lucha\+\_\+celulas} (const \hyperlink{class_celula}{Celula} \&c2) const 
+\begin{DoxyCompactList}\small\item\em Consultora que determina el resultado de la lucha entre dos células. \end{DoxyCompactList}\item 
+bool \hyperlink{class_celula_a4e97c60a207191b2cc951ccdf245df4b}{es\+\_\+vacia} () const 
+\begin{DoxyCompactList}\small\item\em Consultora que indica si la célula es vacía. \end{DoxyCompactList}\item 
+int \hyperlink{class_celula_a872a679a68e462dabde1ea4fe5fbc0ad}{num\+\_\+param} ()
+\begin{DoxyCompactList}\small\item\em Consultora del número de parámetros de una célula. \end{DoxyCompactList}\item 
+void \hyperlink{class_celula_a5124ea0c0da24dfc295dcc428652ee43}{leer} (int N)
+\begin{DoxyCompactList}\small\item\em Operación de lectura. \end{DoxyCompactList}\item 
+void \hyperlink{class_celula_ae16a94d28e49affafd260405414f37ad}{escribir} () const 
+\begin{DoxyCompactList}\small\item\em Operación de escritura. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Métodos públicos estáticos}
+\begin{DoxyCompactItemize}
+\item 
+static int \hyperlink{class_celula_ad1f2960d79a418652964b6aeedaa8243}{id\+\_\+vacia} ()
+\begin{DoxyCompactList}\small\item\em Consultora del identificador especial de células vacías. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_celula_a0984a8b3deeed4979ed6f6141edc3c0c}{id}
+\begin{DoxyCompactList}\small\item\em Identificador de la célula. \end{DoxyCompactList}\item 
+int \hyperlink{class_celula_abda46be7b30a13909d9819c46238080b}{i\+\_\+tol}
+\begin{DoxyCompactList}\small\item\em Indice de tolerancia. \end{DoxyCompactList}\item 
+vector$<$ double $>$ \hyperlink{class_celula_a386c6da3af12b5662e3866675d60a4b7}{param}
+\begin{DoxyCompactList}\small\item\em Parámetros de la célula. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atributos privados estáticos}
+\begin{DoxyCompactItemize}
+\item 
+static const int \hyperlink{class_celula_affff67b41ead0b1f3a3f4faad6c049ac}{I\+D\+\_\+\+V\+A\+C\+I\+A} = 0
+\begin{DoxyCompactList}\small\item\em Identificador especial para células vacias. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+Representa el conjunto de características y operaciones de las células. 
+
+Ofrece la operación de lucha entre células y las operaciones de lectura y escritura.
+
+Dado que vamos a necesitar leer árboles de células, definimos el concepto de célula vacía para disponer de un formato de entrada parecido al de las anteriores sesiones de laboratorio, en las que se emplea una \char`\"{}marca\char`\"{} para indicar la lectura de un árbol vacío. 
+
+Definición en la línea 30 del archivo Celula.\+hh.
+
+
+
+\subsection{Documentación del constructor y destructor}
+\hypertarget{class_celula_a3c5017fbcec8cb564acc666aa7e21206}{\index{Celula@{Celula}!Celula@{Celula}}
+\index{Celula@{Celula}!Celula@{Celula}}
+\subsubsection[{Celula}]{\setlength{\rightskip}{0pt plus 5cm}Celula\+::\+Celula (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_celula_a3c5017fbcec8cb564acc666aa7e21206}
+
+
+Creadora por defecto. 
+
+\begin{DoxyPrecond}{Precondición}
+cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultado es una célula vacía, con índice de tolerancia cero y cero parámetros 
+\end{DoxyPostcond}
+\begin{DoxyParagraph}{Coste}
+Constante 
+\end{DoxyParagraph}
+
+
+Definición en la línea 7 del archivo Celula.\+cc.
+
+
+\begin{DoxyCode}
+8 \{
+9   \textcolor{comment}{// Inicializa una célula con el id de célula vacía}
+10   \textcolor{keywordtype}{id} = \hyperlink{class_celula_affff67b41ead0b1f3a3f4faad6c049ac}{ID\_VACIA};
+11   \hyperlink{class_celula_abda46be7b30a13909d9819c46238080b}{i\_tol} = 0;
+12 \}
+\end{DoxyCode}
+
+
+\subsection{Documentación de las funciones miembro}
+\hypertarget{class_celula_a3dd8be98f1548b02696e2fc32b8d19b4}{\index{Celula@{Celula}!lucha\+\_\+celulas@{lucha\+\_\+celulas}}
+\index{lucha\+\_\+celulas@{lucha\+\_\+celulas}!Celula@{Celula}}
+\subsubsection[{lucha\+\_\+celulas}]{\setlength{\rightskip}{0pt plus 5cm}int Celula\+::lucha\+\_\+celulas (
+\begin{DoxyParamCaption}
+\item[{const {\bf Celula} \&}]{c2}
+\end{DoxyParamCaption}
+) const}}\label{class_celula_a3dd8be98f1548b02696e2fc32b8d19b4}
+
+
+Consultora que determina el resultado de la lucha entre dos células. 
+
+\begin{DoxyPrecond}{Precondición}
+El parámetro implícito (c1) y c2 tienen el mismo número de parámetros 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Retorna el resultado de la lucha entre c1 y c2, que vale 1 si y solo si c1 vence a c2; 2 si y solo si c2 vence a c1; 3 si y solo si no vence ninguna de las dos 
+\end{DoxyPostcond}
+\begin{DoxyParagraph}{Coste}
+Lineal respecto al número de parámetros de una célula 
+\end{DoxyParagraph}
+
+
+Definición en la línea 14 del archivo Celula.\+cc.
+
+
+\begin{DoxyCode}
+15 \{
+16 
+17   \textcolor{keywordflow}{if} (\hyperlink{class_celula_a386c6da3af12b5662e3866675d60a4b7}{param}.size()!=c2.\hyperlink{class_celula_a386c6da3af12b5662e3866675d60a4b7}{param}.size()) \textcolor{keywordflow}{throw} PRO2Excepcio(\textcolor{stringliteral}{"Las dos células han de tener el mismo
+       número de parámetros"});
+18 
+19   \textcolor{comment}{// Se trata de obtener la diferencia entre el número de posiciones de la primera}
+20   \textcolor{comment}{// célula que superan a las de la segunda y viceversa. Después se compara dicha}
+21   \textcolor{comment}{// diferencia con los indicadores de tolerancia.}
+22   \textcolor{keywordtype}{int} i = 0; 
+23   \textcolor{keywordtype}{int} dif = 0;
+24 
+25   \textcolor{comment}{// Inv: dif = diferencia entre el número de posiciones en [0..i-1] en que c1 supera a c2 }
+26   \textcolor{comment}{// y viceversa, 0<=i<=param.size()}
+27   
+28   \textcolor{keywordflow}{while} (i < \hyperlink{class_celula_a386c6da3af12b5662e3866675d60a4b7}{param}.size()) \{
+29     \textcolor{keywordflow}{if} (\hyperlink{class_celula_a386c6da3af12b5662e3866675d60a4b7}{param}[i] > c2.\hyperlink{class_celula_a386c6da3af12b5662e3866675d60a4b7}{param}[i]) ++dif;
+30     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (\hyperlink{class_celula_a386c6da3af12b5662e3866675d60a4b7}{param}[i] < c2.\hyperlink{class_celula_a386c6da3af12b5662e3866675d60a4b7}{param}[i]) --dif;
+31     ++i;
+32   \}
+33   \textcolor{comment}{// Post1: dif = diferencia entre el número de posiciones totales en que }
+34   \textcolor{comment}{// c1 supera a c2 y viceversa }
+35   \textcolor{keywordtype}{int} n = 3;
+36   \textcolor{keywordflow}{if} (dif > c2.\hyperlink{class_celula_abda46be7b30a13909d9819c46238080b}{i\_tol}) n = 1;
+37   \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (dif < -\hyperlink{class_celula_abda46be7b30a13909d9819c46238080b}{i\_tol}) n = 2;
+38   \textcolor{keywordflow}{return} n;
+39 \}
+\end{DoxyCode}
+\hypertarget{class_celula_a4e97c60a207191b2cc951ccdf245df4b}{\index{Celula@{Celula}!es\+\_\+vacia@{es\+\_\+vacia}}
+\index{es\+\_\+vacia@{es\+\_\+vacia}!Celula@{Celula}}
+\subsubsection[{es\+\_\+vacia}]{\setlength{\rightskip}{0pt plus 5cm}bool Celula\+::es\+\_\+vacia (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_celula_a4e97c60a207191b2cc951ccdf245df4b}
+
+
+Consultora que indica si la célula es vacía. 
+
+\begin{DoxyPrecond}{Precondición}
+cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultado indica si la célula es vacía o no 
+\end{DoxyPostcond}
+\begin{DoxyParagraph}{Coste}
+Constante 
+\end{DoxyParagraph}
+
+
+Definición en la línea 41 del archivo Celula.\+cc.
+
+
+\begin{DoxyCode}
+42 \{
+43   \textcolor{keywordflow}{return} \textcolor{keywordtype}{id} == \hyperlink{class_celula_affff67b41ead0b1f3a3f4faad6c049ac}{ID\_VACIA};
+44 \}
+\end{DoxyCode}
+\hypertarget{class_celula_a872a679a68e462dabde1ea4fe5fbc0ad}{\index{Celula@{Celula}!num\+\_\+param@{num\+\_\+param}}
+\index{num\+\_\+param@{num\+\_\+param}!Celula@{Celula}}
+\subsubsection[{num\+\_\+param}]{\setlength{\rightskip}{0pt plus 5cm}int Celula\+::num\+\_\+param (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_celula_a872a679a68e462dabde1ea4fe5fbc0ad}
+
+
+Consultora del número de parámetros de una célula. 
+
+\begin{DoxyPrecond}{Precondición}
+cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultado es el número de parámetros de una célula 
+\end{DoxyPostcond}
+\begin{DoxyParagraph}{Coste}
+Constante 
+\end{DoxyParagraph}
+
+
+Definición en la línea 46 del archivo Celula.\+cc.
+
+
+\begin{DoxyCode}
+46                      \{
+47   \textcolor{keywordflow}{return} \hyperlink{class_celula_a386c6da3af12b5662e3866675d60a4b7}{param}.size();
+48 \}
+\end{DoxyCode}
+\hypertarget{class_celula_ad1f2960d79a418652964b6aeedaa8243}{\index{Celula@{Celula}!id\+\_\+vacia@{id\+\_\+vacia}}
+\index{id\+\_\+vacia@{id\+\_\+vacia}!Celula@{Celula}}
+\subsubsection[{id\+\_\+vacia}]{\setlength{\rightskip}{0pt plus 5cm}int Celula\+::id\+\_\+vacia (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_celula_ad1f2960d79a418652964b6aeedaa8243}
+
+
+Consultora del identificador especial de células vacías. 
+
+\begin{DoxyPrecond}{Precondición}
+cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultado es el identificador de célula vacía 
+\end{DoxyPostcond}
+\begin{DoxyParagraph}{Coste}
+Constante 
+\end{DoxyParagraph}
+
+
+Definición en la línea 50 del archivo Celula.\+cc.
+
+
+\begin{DoxyCode}
+51 \{
+52   \textcolor{keywordflow}{return} \hyperlink{class_celula_affff67b41ead0b1f3a3f4faad6c049ac}{ID\_VACIA};
+53 \}
+\end{DoxyCode}
+\hypertarget{class_celula_a5124ea0c0da24dfc295dcc428652ee43}{\index{Celula@{Celula}!leer@{leer}}
+\index{leer@{leer}!Celula@{Celula}}
+\subsubsection[{leer}]{\setlength{\rightskip}{0pt plus 5cm}void Celula\+::leer (
+\begin{DoxyParamCaption}
+\item[{int}]{N}
+\end{DoxyParamCaption}
+)}}\label{class_celula_a5124ea0c0da24dfc295dcc428652ee43}
+
+
+Operación de lectura. 
+
+\begin{DoxyPrecond}{Precondición}
+N$>$0, el canal de entrada estándar contiene un entero; si dicho entero no corresponde a un identificador de célula vacía, a continuación contiene otro entero y N doubles 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El parámetro implícito pasa a tener un identificador (el primer entero del canal de entrada estándar); si éste no es el de una célula vacía, el p.\+i. también tendrá un índice de tolerancia y N parámetros nuevos, leídos del canal de entrada estándar 
+\end{DoxyPostcond}
+\begin{DoxyParagraph}{Coste}
+Lineal respecto a N (número de parámetros de una célula) 
+\end{DoxyParagraph}
+
+
+Definición en la línea 55 del archivo Celula.\+cc.
+
+
+\begin{DoxyCode}
+56 \{
+57   \textcolor{comment}{// Simplemente lee todos los componentes de la célula teniendo en cuenta que si }
+58   \textcolor{comment}{// el identificador es cero se trata de una celula "marca" y no es necesario continuar leyendo.}
+59 
+60   \textcolor{keywordflow}{if} (N<=0) \textcolor{keywordflow}{throw} PRO2Excepcio(\textcolor{stringliteral}{"La celula ha de tener N parametros (N>0)"});
+61 
+62   cin >> \hyperlink{class_celula_a0984a8b3deeed4979ed6f6141edc3c0c}{id};
+63   \textcolor{keywordflow}{if} (\textcolor{keywordtype}{id} != \hyperlink{class_celula_affff67b41ead0b1f3a3f4faad6c049ac}{ID\_VACIA}) \{
+64     cin >> \hyperlink{class_celula_abda46be7b30a13909d9819c46238080b}{i\_tol};
+65     \hyperlink{class_celula_a386c6da3af12b5662e3866675d60a4b7}{param} = vector<double> (N);
+66     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < N; ++i) \{
+67       cin >> \hyperlink{class_celula_a386c6da3af12b5662e3866675d60a4b7}{param}[i];
+68     \}
+69   \}
+70 \}
+\end{DoxyCode}
+\hypertarget{class_celula_ae16a94d28e49affafd260405414f37ad}{\index{Celula@{Celula}!escribir@{escribir}}
+\index{escribir@{escribir}!Celula@{Celula}}
+\subsubsection[{escribir}]{\setlength{\rightskip}{0pt plus 5cm}void Celula\+::escribir (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_celula_ae16a94d28e49affafd260405414f37ad}
+
+
+Operación de escritura. 
+
+\begin{DoxyPrecond}{Precondición}
+cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se ha escrito el identificador del parámetro implícito por el canal de salida estándard 
+\end{DoxyPostcond}
+\begin{DoxyParagraph}{Coste}
+Lineal respecto al número de parámetros de una célula 
+\end{DoxyParagraph}
+
+
+Definición en la línea 72 del archivo Celula.\+cc.
+
+
+\begin{DoxyCode}
+73 \{
+74   \textcolor{comment}{// Análogamente, se trata sólo de escribir los componentes que nos interesan,}
+75   \textcolor{comment}{// en este caso, según el enunciado, el identificador de la célula.}
+76   cout << \hyperlink{class_celula_a0984a8b3deeed4979ed6f6141edc3c0c}{id};
+77 \}
+\end{DoxyCode}
+
+
+\subsection{Documentación de los datos miembro}
+\hypertarget{class_celula_affff67b41ead0b1f3a3f4faad6c049ac}{\index{Celula@{Celula}!I\+D\+\_\+\+V\+A\+C\+I\+A@{I\+D\+\_\+\+V\+A\+C\+I\+A}}
+\index{I\+D\+\_\+\+V\+A\+C\+I\+A@{I\+D\+\_\+\+V\+A\+C\+I\+A}!Celula@{Celula}}
+\subsubsection[{I\+D\+\_\+\+V\+A\+C\+I\+A}]{\setlength{\rightskip}{0pt plus 5cm}const int Celula\+::\+I\+D\+\_\+\+V\+A\+C\+I\+A = 0\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{class_celula_affff67b41ead0b1f3a3f4faad6c049ac}
+
+
+Identificador especial para células vacias. 
+
+
+
+Definición en la línea 35 del archivo Celula.\+hh.
+
+\hypertarget{class_celula_a0984a8b3deeed4979ed6f6141edc3c0c}{\index{Celula@{Celula}!id@{id}}
+\index{id@{id}!Celula@{Celula}}
+\subsubsection[{id}]{\setlength{\rightskip}{0pt plus 5cm}int Celula\+::id\hspace{0.3cm}{\ttfamily [private]}}}\label{class_celula_a0984a8b3deeed4979ed6f6141edc3c0c}
+
+
+Identificador de la célula. 
+
+
+
+Definición en la línea 37 del archivo Celula.\+hh.
+
+\hypertarget{class_celula_abda46be7b30a13909d9819c46238080b}{\index{Celula@{Celula}!i\+\_\+tol@{i\+\_\+tol}}
+\index{i\+\_\+tol@{i\+\_\+tol}!Celula@{Celula}}
+\subsubsection[{i\+\_\+tol}]{\setlength{\rightskip}{0pt plus 5cm}int Celula\+::i\+\_\+tol\hspace{0.3cm}{\ttfamily [private]}}}\label{class_celula_abda46be7b30a13909d9819c46238080b}
+
+
+Indice de tolerancia. 
+
+
+
+Definición en la línea 39 del archivo Celula.\+hh.
+
+\hypertarget{class_celula_a386c6da3af12b5662e3866675d60a4b7}{\index{Celula@{Celula}!param@{param}}
+\index{param@{param}!Celula@{Celula}}
+\subsubsection[{param}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$double$>$ Celula\+::param\hspace{0.3cm}{\ttfamily [private]}}}\label{class_celula_a386c6da3af12b5662e3866675d60a4b7}
+
+
+Parámetros de la célula. 
+
+
+
+Definición en la línea 41 del archivo Celula.\+hh.
+
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_celula_8hh}{Celula.\+hh}\item 
+\hyperlink{_celula_8cc}{Celula.\+cc}\end{DoxyCompactItemize}

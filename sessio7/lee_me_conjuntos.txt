@@ -1,0 +1,6 @@
+Esta sesión tiene una parte dedicada a mostrar el funcionamiento de la
+clase set (conjunto, generica<elem>)
+
+La carpeta con los materiales necesarios se llama "conjunts"
+
+También hay ejercicios de conjuntos en el jutge.

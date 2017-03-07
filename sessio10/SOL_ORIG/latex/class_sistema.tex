@@ -1,0 +1,445 @@
+\hypertarget{class_sistema}{\section{Referencia de la Clase Sistema}
+\label{class_sistema}\index{Sistema@{Sistema}}
+}
+
+
+Representa el sistema donde se desarrollan los experimentos.  
+
+
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_sistema_a815b07845ef6b03247b239333fe75e28}{Sistema} ()
+\begin{DoxyCompactList}\small\item\em Creadora por defecto. \end{DoxyCompactList}\item 
+void \hyperlink{class_sistema_a6522b718fc0701d38c2e2d2c2d2e88a6}{anadir\+\_\+organismo} (\hyperlink{class_organismo}{Organismo} \&o, bool \&sobrevive)
+\begin{DoxyCompactList}\small\item\em Modificadora que gestiona el intento de entrada de un organismo en el sistema. \end{DoxyCompactList}\item 
+void \hyperlink{class_sistema_ae670549104642dd4664ac8f794b4b1e9}{leer} (int N)
+\begin{DoxyCompactList}\small\item\em Operación de lectura. \end{DoxyCompactList}\item 
+void \hyperlink{class_sistema_a3f2a05a17345ee3be8331950fb2eedc0}{escribir} (bool tipo, bool estr) const 
+\begin{DoxyCompactList}\small\item\em Operación de escritura. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Métodos privados estáticos}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{class_sistema_a9123a18225eece5cf29d0d59067ac509}{luchas\+\_\+org\+\_\+cola} (queue$<$ \hyperlink{class_organismo}{Organismo} $>$ \&c, \hyperlink{class_organismo}{Organismo} \&o, bool \&sobrevive)
+\begin{DoxyCompactList}\small\item\em Lucha de un organismo contra los organismos de una cola. \end{DoxyCompactList}\item 
+static void \hyperlink{class_sistema_afaa4f1c2cce4c63faf03ee01265f5320}{clear} (queue$<$ \hyperlink{class_organismo}{Organismo} $>$ \&q)
+\begin{DoxyCompactList}\small\item\em Elimina todos los elementos de una cola de organismos. \end{DoxyCompactList}\item 
+static void \hyperlink{class_sistema_a251ac725ddac0022e4845faec14004ef}{recolocar} (int n, queue$<$ \hyperlink{class_organismo}{Organismo} $>$ \&c)
+\begin{DoxyCompactList}\small\item\em Pasa los n primeros organismos de una cola al final de ésta, conservando el orden relativo. \end{DoxyCompactList}\item 
+static void \hyperlink{class_sistema_aa5e14a3c6ccd53bf61020d69e03b136d}{escribir\+\_\+sistema\+\_\+cola} (const queue$<$ \hyperlink{class_organismo}{Organismo} $>$ \&c, bool estr)
+\begin{DoxyCompactList}\small\item\em Operación de escritura de una cola de organismos. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+queue$<$ \hyperlink{class_organismo}{Organismo} $>$ \hyperlink{class_sistema_a7311a56f7b8336096ca52a744c4d3804}{def}
+\begin{DoxyCompactList}\small\item\em Cola de organismos defensivos. \end{DoxyCompactList}\item 
+queue$<$ \hyperlink{class_organismo}{Organismo} $>$ \hyperlink{class_sistema_a11fa1af3dde26025dd10b3ac103f426e}{mal}
+\begin{DoxyCompactList}\small\item\em Cola de organismos malignos. \end{DoxyCompactList}\item 
+int \hyperlink{class_sistema_a69ba5e2cce55afc2a47d899a1100a42a}{id}
+\begin{DoxyCompactList}\small\item\em Primer número disponible de identificador de organismo. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+Representa el sistema donde se desarrollan los experimentos. 
+
+Ofrece operaciones para introducir un organismo en el sistema, de lectura y escritura del sistema. 
+
+Definición en la línea 24 del archivo Sistema.\+hh.
+
+
+
+\subsection{Documentación del constructor y destructor}
+\hypertarget{class_sistema_a815b07845ef6b03247b239333fe75e28}{\index{Sistema@{Sistema}!Sistema@{Sistema}}
+\index{Sistema@{Sistema}!Sistema@{Sistema}}
+\subsubsection[{Sistema}]{\setlength{\rightskip}{0pt plus 5cm}Sistema\+::\+Sistema (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_sistema_a815b07845ef6b03247b239333fe75e28}
+
+
+Creadora por defecto. 
+
+\begin{DoxyPrecond}{Precondición}
+cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultado es un sistema en que no ha entrado ningún organismo 
+\end{DoxyPostcond}
+\begin{DoxyParagraph}{Coste}
+Constante 
+\end{DoxyParagraph}
+
+
+Definición en la línea 7 del archivo Sistema.\+cc.
+
+
+\begin{DoxyCode}
+8 \{
+9   \textcolor{keywordtype}{id} = 1;
+10 \}
+\end{DoxyCode}
+
+
+\subsection{Documentación de las funciones miembro}
+\hypertarget{class_sistema_a6522b718fc0701d38c2e2d2c2d2e88a6}{\index{Sistema@{Sistema}!anadir\+\_\+organismo@{anadir\+\_\+organismo}}
+\index{anadir\+\_\+organismo@{anadir\+\_\+organismo}!Sistema@{Sistema}}
+\subsubsection[{anadir\+\_\+organismo}]{\setlength{\rightskip}{0pt plus 5cm}void Sistema\+::anadir\+\_\+organismo (
+\begin{DoxyParamCaption}
+\item[{{\bf Organismo} \&}]{o, }
+\item[{bool \&}]{sobrevive}
+\end{DoxyParamCaption}
+)}}\label{class_sistema_a6522b718fc0701d38c2e2d2c2d2e88a6}
+
+
+Modificadora que gestiona el intento de entrada de un organismo en el sistema. 
+
+\begin{DoxyPrecond}{Precondición}
+o es un organismo sin identificador 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El parámetro implícito contiene el estado del sistema después del intento de entrada del organismo o; o pasa a tener identificador y a contener el número de organismos que ha destruido; sobrevive indica si o queda vivo en el parámetro implícito o no 
+\end{DoxyPostcond}
+\begin{DoxyParagraph}{Coste}
+Lineal respecto al número de organismos del sistema (el coste de tratar cada organismo es lineal respecto a su número de células y el coste de tratar cada célula es lineal respecto a su número de parámetros) 
+\end{DoxyParagraph}
+
+
+Definición en la línea 12 del archivo Sistema.\+cc.
+
+
+\begin{DoxyCode}
+13 \{
+14 \textcolor{comment}{// Proporciona su identificador al nuevo organismo y organiza las luchas de}
+15 \textcolor{comment}{// éste. Para ello, emplea la operación privada "luchas\_org\_cola" que lo enfrenta}
+16 \textcolor{comment}{// a los de la cola correspondiente y obtiene la información necesaria.}
+17    o.\hyperlink{class_organismo_a4fa50ea637c25ee2b04bd1805ec634dc}{anadir\_id}(\textcolor{keywordtype}{id});
+18    ++\hyperlink{class_sistema_a69ba5e2cce55afc2a47d899a1100a42a}{id};
+19    \textcolor{keywordflow}{if} (o.\hyperlink{class_organismo_aa746619493d11ed0b2eb2c75ce202ad0}{es\_maligno}()) \{ 
+20       \hyperlink{class_sistema_a9123a18225eece5cf29d0d59067ac509}{luchas\_org\_cola}(\hyperlink{class_sistema_a7311a56f7b8336096ca52a744c4d3804}{def}, o, sobrevive);
+21       \textcolor{keywordflow}{if} (sobrevive) \hyperlink{class_sistema_a11fa1af3dde26025dd10b3ac103f426e}{mal}.push(o);
+22    \}
+23    \textcolor{keywordflow}{else} \{
+24       \hyperlink{class_sistema_a9123a18225eece5cf29d0d59067ac509}{luchas\_org\_cola}(\hyperlink{class_sistema_a11fa1af3dde26025dd10b3ac103f426e}{mal}, o, sobrevive);
+25       \textcolor{keywordflow}{if} (sobrevive) \hyperlink{class_sistema_a7311a56f7b8336096ca52a744c4d3804}{def}.push(o);
+26    \}
+27 \}
+\end{DoxyCode}
+\hypertarget{class_sistema_ae670549104642dd4664ac8f794b4b1e9}{\index{Sistema@{Sistema}!leer@{leer}}
+\index{leer@{leer}!Sistema@{Sistema}}
+\subsubsection[{leer}]{\setlength{\rightskip}{0pt plus 5cm}void Sistema\+::leer (
+\begin{DoxyParamCaption}
+\item[{int}]{N}
+\end{DoxyParamCaption}
+)}}\label{class_sistema_ae670549104642dd4664ac8f794b4b1e9}
+
+
+Operación de lectura. 
+
+\begin{DoxyPrecond}{Precondición}
+N$>$0, el canal estándard de entrada contiene un entero M $>$ 0 seguido de los datos de M organismos 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El parámetro implícito está formado por los M organismos procedentes del canal estándard de entrada y formados por celulas de N parámetros 
+\end{DoxyPostcond}
+\begin{DoxyParagraph}{Coste}
+Lineal respecto al número de organismos leídos (ver comentario en el coste de la operación \char`\"{}anadir\+\_\+organismo\char`\"{}) 
+\end{DoxyParagraph}
+
+
+Definición en la línea 107 del archivo Sistema.\+cc.
+
+
+\begin{DoxyCode}
+108 \{
+109 \textcolor{comment}{// Esta operación actualiza todos los componentes de un sistema, leyéndolos}
+110 \textcolor{comment}{// del canal estándar; ofrece la posiblidad de leer y almacenar algunos}
+111 \textcolor{comment}{// organismos defensivos.  El número de éstos se proporciona al comienzo de}
+112 \textcolor{comment}{// la operación.}
+113 
+114   \textcolor{keywordflow}{if} (N<=0) \textcolor{keywordflow}{throw} PRO2Excepcio(\textcolor{stringliteral}{"Las celulas de los organismos del sistema han de tener N parametros (N>0)"})
+      ;
+115 
+116   \hyperlink{class_sistema_afaa4f1c2cce4c63faf03ee01265f5320}{clear}(\hyperlink{class_sistema_a7311a56f7b8336096ca52a744c4d3804}{def});
+117   \hyperlink{class_sistema_afaa4f1c2cce4c63faf03ee01265f5320}{clear}(\hyperlink{class_sistema_a11fa1af3dde26025dd10b3ac103f426e}{mal});  
+118   \textcolor{keywordtype}{int} num; \textcolor{comment}{// numero de organismos iniciales del sistema}
+119   cin >> num;
+120   \hyperlink{class_organismo}{Organismo} o;
+121   \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 1; i <= num; ++i) \{  
+122     o.\hyperlink{class_organismo_a189d611401e25f603103c420d0b62e23}{leer}(N); 
+123     o.\hyperlink{class_organismo_a4fa50ea637c25ee2b04bd1805ec634dc}{anadir\_id}(i); 
+124     \textcolor{keywordflow}{if} (o.\hyperlink{class_organismo_aa746619493d11ed0b2eb2c75ce202ad0}{es\_maligno}()) \hyperlink{class_sistema_a11fa1af3dde26025dd10b3ac103f426e}{mal}.push(o);
+125     \textcolor{keywordflow}{else} \hyperlink{class_sistema_a7311a56f7b8336096ca52a744c4d3804}{def}.push(o);
+126   \}
+127   \textcolor{keywordtype}{id} = num+1;
+128 \}
+\end{DoxyCode}
+\hypertarget{class_sistema_a3f2a05a17345ee3be8331950fb2eedc0}{\index{Sistema@{Sistema}!escribir@{escribir}}
+\index{escribir@{escribir}!Sistema@{Sistema}}
+\subsubsection[{escribir}]{\setlength{\rightskip}{0pt plus 5cm}void Sistema\+::escribir (
+\begin{DoxyParamCaption}
+\item[{bool}]{tipo, }
+\item[{bool}]{estr}
+\end{DoxyParamCaption}
+) const}}\label{class_sistema_a3f2a05a17345ee3be8331950fb2eedc0}
+
+
+Operación de escritura. 
+
+\begin{DoxyPrecond}{Precondición}
+cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Si \char`\"{}tipo\char`\"{} es cierto, se han escrito en el canal de salida estándard, por orden de identificador, los organismos defensivos del parámetro implícito, en caso contrario se han escrito los malignos; si \char`\"{}estr\char`\"{} es cierto, cada organismo se escribe con su estructura celular, en caso contrario sólo se escribe su identificador 
+\end{DoxyPostcond}
+\begin{DoxyParagraph}{Coste}
+Lineal respecto al número de organismos escritos (si \char`\"{}estr\char`\"{} es cierto, ver comentario en el coste de la operación \char`\"{}anadir\+\_\+organismo\char`\"{}) 
+\end{DoxyParagraph}
+
+
+Definición en la línea 130 del archivo Sistema.\+cc.
+
+
+\begin{DoxyCode}
+131 \{
+132 \textcolor{comment}{// Esta operación simplemente recorre la cola de los organismos pedidos,}
+133 \textcolor{comment}{// proporcionando la información requerida, mediante una operación privada}
+134 \textcolor{comment}{// auxiliar: "escribir\_sistema\_cola".}
+135 
+136   \textcolor{keywordflow}{if} (tipo) \hyperlink{class_sistema_aa5e14a3c6ccd53bf61020d69e03b136d}{escribir\_sistema\_cola}(\hyperlink{class_sistema_a7311a56f7b8336096ca52a744c4d3804}{def}, estr);
+137   \textcolor{keywordflow}{else} \hyperlink{class_sistema_aa5e14a3c6ccd53bf61020d69e03b136d}{escribir\_sistema\_cola}(\hyperlink{class_sistema_a11fa1af3dde26025dd10b3ac103f426e}{mal}, estr);
+138 \}
+\end{DoxyCode}
+\hypertarget{class_sistema_a9123a18225eece5cf29d0d59067ac509}{\index{Sistema@{Sistema}!luchas\+\_\+org\+\_\+cola@{luchas\+\_\+org\+\_\+cola}}
+\index{luchas\+\_\+org\+\_\+cola@{luchas\+\_\+org\+\_\+cola}!Sistema@{Sistema}}
+\subsubsection[{luchas\+\_\+org\+\_\+cola}]{\setlength{\rightskip}{0pt plus 5cm}void Sistema\+::luchas\+\_\+org\+\_\+cola (
+\begin{DoxyParamCaption}
+\item[{queue$<$ {\bf Organismo} $>$ \&}]{c, }
+\item[{{\bf Organismo} \&}]{o, }
+\item[{bool \&}]{sobrevive}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{class_sistema_a9123a18225eece5cf29d0d59067ac509}
+
+
+Lucha de un organismo contra los organismos de una cola. 
+
+\begin{DoxyPrecond}{Precondición}
+c = C; C está ordenada crecientemente según los identificadores de sus organismos 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+c contiene los organismos de C, ordenados crecientemente por identificador y con su contador de víctimas actualizado, excepto los que hayan muerto al enfrentarse con o; sobrevive indica si o queda vivo despues de sus enfrentamientos; o pasa a contener el número de organismos que ha destruido 
+\end{DoxyPostcond}
+\begin{DoxyParagraph}{Coste}
+Lineal respecto al número de organismos en C (ver comentario en el coste de la operación \char`\"{}anadir\+\_\+organismo\char`\"{}) 
+\end{DoxyParagraph}
+
+
+Definición en la línea 29 del archivo Sistema.\+cc.
+
+
+\begin{DoxyCode}
+30 \{
+31 \textcolor{comment}{// Busca el primer organismo de la cola c que consigue matar al organismo o y}
+32 \textcolor{comment}{// borra (y cuenta) todos los que resultan destruidos por éste. Para que el}
+33 \textcolor{comment}{// borrado sea efectivo, los supervivientes se van añadiendo al final de la }
+34 \textcolor{comment}{// cola. Al final, los que no hayan luchado se pasan al final la cola mediante}
+35 \textcolor{comment}{// una nueva operación privada auxiliar: "recolocar".}
+36 
+37    \hyperlink{class_organismo}{Organismo} actual; 
+38    \textcolor{keywordtype}{int} resultado; 
+39  
+40    sobrevive = \textcolor{keyword}{true};
+41    \textcolor{keywordtype}{int} long\_cola = c.size();
+42   
+43 \textcolor{comment}{// Inv: sobrevive = ninguno de los elementos visitados de C destruye a o;}
+44 \textcolor{comment}{//      c = elementos no visitados de C seguidos por los elementos visitados}
+45 \textcolor{comment}{//      con su contador de víctimas actualizado, excepto los que hayan muerto }
+46 \textcolor{comment}{//      al enfrentarse con o, en el mismo orden en que estaban en C;}
+47 \textcolor{comment}{//      long\_cola = número de elementos no visitados de C;}
+48 \textcolor{comment}{//      o tiene actualizado su contador de víctimas}
+49 \textcolor{comment}{// }
+50 \textcolor{comment}{// Cota: long\_cola}
+51 
+52    \textcolor{keywordflow}{while} (long\_cola>0 and sobrevive) \{
+53       actual = c.front();
+54       resultado = o.\hyperlink{class_organismo_a2f4573f69288fa8ec05ec709f2336a8d}{lucha\_organismos}(actual);
+55       \textcolor{keywordflow}{switch} (resultado) \{
+56          \textcolor{keywordflow}{case} 0: \{                    \textcolor{comment}{// los dos mueren}
+57             sobrevive = \textcolor{keyword}{false};        \textcolor{comment}{// no actualizamos las víctimas de actual }
+58             o.\hyperlink{class_organismo_ae498385e40b42c4e9b11226befd6e4c6}{incrementar\_victimas}(); \textcolor{comment}{// porque éste ya no pertenece al sistema}
+59             \textcolor{keywordflow}{break};
+60          \} 
+61          \textcolor{keywordflow}{case} 1: \{                    \textcolor{comment}{// o muere, actual sobrevive}
+62             sobrevive= \textcolor{keyword}{false};
+63             actual.\hyperlink{class_organismo_ae498385e40b42c4e9b11226befd6e4c6}{incrementar\_victimas}();
+64             c.push(actual);
+65             \textcolor{keywordflow}{break};
+66          \}
+67          \textcolor{keywordflow}{case} 2: \{                    \textcolor{comment}{// o sobrevive, actual muere}
+68             o.\hyperlink{class_organismo_ae498385e40b42c4e9b11226befd6e4c6}{incrementar\_victimas}();
+69             \textcolor{keywordflow}{break};
+70          \}
+71          \textcolor{keywordflow}{case} 3: \{                    \textcolor{comment}{// los dos sobreviven}
+72             c.push(actual);
+73             \textcolor{keywordflow}{break};
+74          \}
+75       \}
+76       c.pop();
+77       --long\_cola;
+78    \}
+79 
+80 \textcolor{comment}{// Post1: Inv1 y (long\_cola == 0 or not sobrevive)}
+81 
+82 \textcolor{comment}{// Falta pasar al final de c los elementos no visitados de C (por Inv1, son}
+83 \textcolor{comment}{// los long\_cola primeros de c), para mantener el orden por identificador}
+84 
+85    \hyperlink{class_sistema_a251ac725ddac0022e4845faec14004ef}{recolocar}(long\_cola,c);
+86 \}
+\end{DoxyCode}
+\hypertarget{class_sistema_afaa4f1c2cce4c63faf03ee01265f5320}{\index{Sistema@{Sistema}!clear@{clear}}
+\index{clear@{clear}!Sistema@{Sistema}}
+\subsubsection[{clear}]{\setlength{\rightskip}{0pt plus 5cm}void Sistema\+::clear (
+\begin{DoxyParamCaption}
+\item[{queue$<$ {\bf Organismo} $>$ \&}]{q}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{class_sistema_afaa4f1c2cce4c63faf03ee01265f5320}
+
+
+Elimina todos los elementos de una cola de organismos. 
+
+\begin{DoxyPrecond}{Precondición}
+c = C; 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+c es vacía 
+\end{DoxyPostcond}
+\begin{DoxyParagraph}{Coste}
+Lineal respecto al número de organismos en C (ver comentario en el coste de la operación \char`\"{}anadir\+\_\+organismo\char`\"{}) 
+\end{DoxyParagraph}
+
+
+Definición en la línea 102 del archivo Sistema.\+cc.
+
+
+\begin{DoxyCode}
+103 \{
+104   \textcolor{keywordflow}{while} (not q.empty()) q.pop();
+105 \}
+\end{DoxyCode}
+\hypertarget{class_sistema_a251ac725ddac0022e4845faec14004ef}{\index{Sistema@{Sistema}!recolocar@{recolocar}}
+\index{recolocar@{recolocar}!Sistema@{Sistema}}
+\subsubsection[{recolocar}]{\setlength{\rightskip}{0pt plus 5cm}void Sistema\+::recolocar (
+\begin{DoxyParamCaption}
+\item[{int}]{n, }
+\item[{queue$<$ {\bf Organismo} $>$ \&}]{c}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{class_sistema_a251ac725ddac0022e4845faec14004ef}
+
+
+Pasa los n primeros organismos de una cola al final de ésta, conservando el orden relativo. 
+
+\begin{DoxyPrecond}{Precondición}
+n = N $<$= c.\+size(), c = C; 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+c contiene los mismos elementos que C, pero los N primeros elementos de C están al final de c, en el orden relativo original; los restantes también conservan su orden relativo original 
+\end{DoxyPostcond}
+\begin{DoxyParagraph}{Coste}
+Lineal respecto a n (ver comentario en el coste de la operación \char`\"{}anadir\+\_\+organismo\char`\"{}) 
+\end{DoxyParagraph}
+
+
+Definición en la línea 88 del archivo Sistema.\+cc.
+
+
+\begin{DoxyCode}
+89 \{
+90   \textcolor{comment}{// Inv:  n<=N, c contiene los mismos elementos que C, pero los N-n primeros }
+91   \textcolor{comment}{//       elementos de C están al final de c, en el orden relativo original;}
+92   \textcolor{comment}{//       los restantes también conservan su orden relativo original}
+93   \textcolor{comment}{// Cota: n}
+94 
+95   \textcolor{keywordflow}{while} (n>0) \{
+96     c.push(c.front());
+97     c.pop();
+98     --n;
+99   \} 
+100 \}
+\end{DoxyCode}
+\hypertarget{class_sistema_aa5e14a3c6ccd53bf61020d69e03b136d}{\index{Sistema@{Sistema}!escribir\+\_\+sistema\+\_\+cola@{escribir\+\_\+sistema\+\_\+cola}}
+\index{escribir\+\_\+sistema\+\_\+cola@{escribir\+\_\+sistema\+\_\+cola}!Sistema@{Sistema}}
+\subsubsection[{escribir\+\_\+sistema\+\_\+cola}]{\setlength{\rightskip}{0pt plus 5cm}void Sistema\+::escribir\+\_\+sistema\+\_\+cola (
+\begin{DoxyParamCaption}
+\item[{const queue$<$ {\bf Organismo} $>$ \&}]{c, }
+\item[{bool}]{estr}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{class_sistema_aa5e14a3c6ccd53bf61020d69e03b136d}
+
+
+Operación de escritura de una cola de organismos. 
+
+\begin{DoxyPrecond}{Precondición}
+cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se han escrito en el canal estándar de salida los organismos de c, por orden de identificador; si estr es cierto, cada organismo se escribe con su estructura celular, en caso contrario sólo se escribe su identificador 
+\end{DoxyPostcond}
+\begin{DoxyParagraph}{Coste}
+Lineal respecto al número de organismos escritos (si \char`\"{}estr\char`\"{} es cierto, ver comentario en el coste de la operación \char`\"{}anadir\+\_\+organismo\char`\"{}) 
+\end{DoxyParagraph}
+
+
+Definición en la línea 140 del archivo Sistema.\+cc.
+
+
+\begin{DoxyCode}
+141 \{
+142   queue<Organismo> aux(c);
+143   \textcolor{keywordflow}{while} (not aux.empty()) \{
+144     aux.front().escribir(estr);
+145     aux.pop();
+146   \}
+147 \}
+\end{DoxyCode}
+
+
+\subsection{Documentación de los datos miembro}
+\hypertarget{class_sistema_a7311a56f7b8336096ca52a744c4d3804}{\index{Sistema@{Sistema}!def@{def}}
+\index{def@{def}!Sistema@{Sistema}}
+\subsubsection[{def}]{\setlength{\rightskip}{0pt plus 5cm}queue$<${\bf Organismo}$>$ Sistema\+::def\hspace{0.3cm}{\ttfamily [private]}}}\label{class_sistema_a7311a56f7b8336096ca52a744c4d3804}
+
+
+Cola de organismos defensivos. 
+
+Ordenada crecientemente por el id de sus componentes 
+
+Definición en la línea 40 del archivo Sistema.\+hh.
+
+\hypertarget{class_sistema_a11fa1af3dde26025dd10b3ac103f426e}{\index{Sistema@{Sistema}!mal@{mal}}
+\index{mal@{mal}!Sistema@{Sistema}}
+\subsubsection[{mal}]{\setlength{\rightskip}{0pt plus 5cm}queue$<${\bf Organismo}$>$ Sistema\+::mal\hspace{0.3cm}{\ttfamily [private]}}}\label{class_sistema_a11fa1af3dde26025dd10b3ac103f426e}
+
+
+Cola de organismos malignos. 
+
+Ordenada crecientemente por el id de sus componentes 
+
+Definición en la línea 45 del archivo Sistema.\+hh.
+
+\hypertarget{class_sistema_a69ba5e2cce55afc2a47d899a1100a42a}{\index{Sistema@{Sistema}!id@{id}}
+\index{id@{id}!Sistema@{Sistema}}
+\subsubsection[{id}]{\setlength{\rightskip}{0pt plus 5cm}int Sistema\+::id\hspace{0.3cm}{\ttfamily [private]}}}\label{class_sistema_a69ba5e2cce55afc2a47d899a1100a42a}
+
+
+Primer número disponible de identificador de organismo. 
+
+
+
+Definición en la línea 48 del archivo Sistema.\+hh.
+
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_sistema_8hh}{Sistema.\+hh}\item 
+\hyperlink{_sistema_8cc}{Sistema.\+cc}\end{DoxyCompactItemize}

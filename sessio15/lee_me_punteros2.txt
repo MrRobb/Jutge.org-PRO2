@@ -1,0 +1,7 @@
+Esta sesión se dedica a ejercitar implementaciones de estructuras
+enlazadas, en concreto de las clases arbol Nario y arbol general
+
+También se proponen ejercicios más avanzados de las clases lista y
+arbol binario
+
+La carpeta con los materiales necesarios se llama "apuntadors"

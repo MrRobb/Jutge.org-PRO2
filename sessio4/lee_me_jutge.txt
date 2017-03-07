@@ -1,0 +1,6 @@
+En esta sesión se han de hacer los problemas del Jutge que aparecen en
+la lista "Controls anteriors"; recordad que obtener semáforo verde
+solo supone que la solución entregada funciona con los juegos de
+prueba que acompañan al enunciado, pero no garantiza que la solución
+cumpla todos los criterios de diseño, modularidad, eficiencia, etc 
+propios de la asignatura PRO2.

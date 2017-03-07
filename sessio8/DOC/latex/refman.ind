@@ -1,0 +1,41 @@
+\begin{theindex}
+
+  \item {Cubeta}, \hyperpage{7}
+    \subitem {Cubeta}, \hyperpage{7, 8}
+    \subitem {escribir}, \hyperpage{8}
+
+  \indexspace
+
+  \item {escribir}
+    \subitem {Cubeta}, \hyperpage{8}
+    \subitem {Lavadora}, \hyperpage{11}
+    \subitem {Prenda}, \hyperpage{13}
+
+  \indexspace
+
+  \item {inicializar}
+    \subitem {Lavadora}, \hyperpage{10}
+
+  \indexspace
+
+  \item {lavado}
+    \subitem {Lavadora}, \hyperpage{10}
+  \item {Lavadora}, \hyperpage{9}
+    \subitem {escribir}, \hyperpage{11}
+    \subitem {inicializar}, \hyperpage{10}
+    \subitem {lavado}, \hyperpage{10}
+    \subitem {Lavadora}, \hyperpage{10}
+
+  \indexspace
+
+  \item {modificar}
+    \subitem {Prenda}, \hyperpage{13}
+
+  \indexspace
+
+  \item {Prenda}, \hyperpage{12}
+    \subitem {escribir}, \hyperpage{13}
+    \subitem {modificar}, \hyperpage{13}
+    \subitem {Prenda}, \hyperpage{12, 13}
+
+\end{theindex}

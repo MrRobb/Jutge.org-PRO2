@@ -1,0 +1,18 @@
+% si se quiere que el alias del coste se indente igual que pre y post,
+% se ha de usar la definicion de leftmargin que hay aqui; una forma
+% sencilla de hacerlo es añadir \usepackage{doxygen.mod} al final de doxygen.sty
+% antes de ejecutar make; es valida hasta el siguiente "doxygen Doxyfile"
+% 
+\renewenvironment{DoxyParagraph}[1]{%
+  \begin{list}{}{%
+    \settowidth{\labelwidth}{40pt}%
+    \setlength{\leftmargin}{\labelwidth+\labelsep}% esto es lo diferente
+    \setlength{\parsep}{0pt}%
+    \setlength{\itemsep}{-4pt}%
+    \renewcommand{\makelabel}{\entrylabel}%
+  }%
+  \item[#1]%
+}{%
+  \end{list}%
+}
+

@@ -1,0 +1,11 @@
+Ejemplo de práctica resuelta, con documentación {\bfseries  completa} (incluyendo elementos privados y código).
+
+El programa principal se encuentra en el módulo \hyperlink{pro2_8cc}{pro2.\+cc}. Atendiendo a los tipos de datos sugeridos en el enunciado, necesitaremos un módulo para representar el \hyperlink{class_sistema}{Sistema} en el que se desarrollarán los experimentos, otro para el tipo \hyperlink{class_organismo}{Organismo} y otro para el tipo \hyperlink{class_celula}{Celula}.
+
+Comentarios\+:
+
+
+\begin{DoxyItemize}
+\item En una resolución normal, comenzaríamos por considerar las operaciones necesarias para el programa principal y las clasificaríamos en los diferentes módulos. Al pasar a su implementación, quizá descubriésemos que algún módulo necesita alguna operación adicional y la incorporaríamos en ese momento (sólo si es pública, es decir, si se usa en un módulo distinto al que pertenece). Sin embargo, en un documento de estas características, se presentan los módulos completamente acabados, sin necesidad de reflejar el proceso que ha dado lugar a su especificación final.
+\item En cuanto a los diagramas modulares que aparecen en este proyecto, notad que la relación de uso entre \hyperlink{class_organismo}{Organismo} y \hyperlink{class_celula}{Celula} no se obtiene a partir de la especificación de los elementos públicos del primero, sino de la de sus elementos privados. 
+\end{DoxyItemize}
