@@ -7,12 +7,12 @@
 		<key>sesion1.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>1</integer>
+			<integer>0</integer>
 		</dict>
-		<key>sesion3.xcscheme</key>
+		<key>suma.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>1</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
@@ -23,6 +23,11 @@
 			<true/>
 		</dict>
 		<key>622C27951E6EFE0E002D8098</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>622C27A71E6F01A8002D8098</key>
 		<dict>
 			<key>primary</key>
 			<true/>

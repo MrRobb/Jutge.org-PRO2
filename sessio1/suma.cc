@@ -9,4 +9,3 @@ int main()
   int sum = x+y;
   cout << "La suma de " << x << " i " << y << " es " << sum <<endl;
 }
-

@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "622C27951E6EFE0E002D8098"
-               BuildableName = "sesion1"
-               BlueprintName = "sesion1"
-               ReferencedContainer = "container:sesion3.xcodeproj">
+               BlueprintIdentifier = "622C27A71E6F01A8002D8098"
+               BuildableName = "suma"
+               BlueprintName = "suma"
+               ReferencedContainer = "container:PRO2.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "622C27951E6EFE0E002D8098"
-            BuildableName = "sesion1"
-            BlueprintName = "sesion1"
-            ReferencedContainer = "container:sesion3.xcodeproj">
+            BlueprintIdentifier = "622C27A71E6F01A8002D8098"
+            BuildableName = "suma"
+            BlueprintName = "suma"
+            ReferencedContainer = "container:PRO2.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -55,10 +55,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "622C27951E6EFE0E002D8098"
-            BuildableName = "sesion1"
-            BlueprintName = "sesion1"
-            ReferencedContainer = "container:sesion3.xcodeproj">
+            BlueprintIdentifier = "622C27A71E6F01A8002D8098"
+            BuildableName = "suma"
+            BlueprintName = "suma"
+            ReferencedContainer = "container:PRO2.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -74,10 +74,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "622C27951E6EFE0E002D8098"
-            BuildableName = "sesion1"
-            BlueprintName = "sesion1"
-            ReferencedContainer = "container:sesion3.xcodeproj">
+            BlueprintIdentifier = "622C27A71E6F01A8002D8098"
+            BuildableName = "suma"
+            BlueprintName = "suma"
+            ReferencedContainer = "container:PRO2.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
