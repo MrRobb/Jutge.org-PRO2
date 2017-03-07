@@ -26,10 +26,15 @@ int main()
   Estudiant est;
   cout << "Escribe un estudiante <DNI nota>" << endl;
   est.llegir();
-  if (est.te_nota()) { // comprobamos la precondicion
+  while (est.consultar_DNI() != 0) { // comprobamos la precondicion
     //est=redondear_e_f(est);	// version funcion, en este caso es ineficiente
     redondear_e_a(est);    // version accion
+    
+    // Write
+    cout << "El estudiante con la nota redondeada, o NP: " <<endl;
+    est.escriure();
+    
+    // Read next one
+    est.llegir();
   }
-  cout << "El estudiante con la nota redondeada, o NP: " <<endl;
-  est.escriure();
 }
