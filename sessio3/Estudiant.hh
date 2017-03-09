@@ -14,12 +14,12 @@ class Estudiant {
 private:
   int dni;
   double nota;
-  bool amb_nota;
   static const int MAX_NOTA = 10;
   /*
     Invariant de la representacio:
     - 0 <= dni
-    - si amb_nota, llavors 0 <= nota <= MAX_NOTA
+    - si té nota, llavors 0 <= nota <= MAX_NOTA
+    - si no té nota, llavors nota = -1
   */
     
 public:
@@ -35,7 +35,11 @@ public:
     
   // Destructora: esborra automaticament els objectes locals en sortir
   // d'un ambit de visibilitat
-    
+  
+  Estudiant(const Estudiant& est);
+  /* Pre: cert */
+  /* Post: El resultado es un estudiante nuevo, copia de est */
+  
   ~Estudiant();
     
   //Modificadores

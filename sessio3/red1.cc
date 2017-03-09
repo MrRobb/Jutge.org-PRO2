@@ -26,10 +26,11 @@ int main()
   Estudiant est;
   cout << "Escribe un estudiante <DNI nota>" << endl;
   est.llegir();
+  Estudiant est2(est);
   if (est.te_nota()) { // comprobamos la precondicion
     //est=redondear_e_f(est);	// version funcion, en este caso es ineficiente
-    redondear_e_a(est);    // version accion
+    redondear_e_a(est2);    // version accion
   }
   cout << "El estudiante con la nota redondeada, o NP: " <<endl;
-  est.escriure();
+  est2.escriure();
 }
