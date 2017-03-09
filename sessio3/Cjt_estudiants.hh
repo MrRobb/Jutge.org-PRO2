@@ -48,15 +48,16 @@ public:
    
   //Modificadores
 
-  void afegir_estudiant(const Estudiant& est);
-  /* Pre: el parametre implicit no conte cap estudiant amb el DNI d'est;
-     el nombre d'estudiants del p.i. es mes petit que la mida maxima permesa */
-  /* Post: s'ha afegit l'estudiant est al parametre implicit */
-    
-  void modificar_estudiant(const Estudiant& est);
-  /* Pre: existeix un estudiant al parametre implicit amb el DNI d'est  */
-  /* Post: l'estudiant del parametre implicit original amb el dni
-     d'est, ha quedat substituit per est */
+  void afegir_estudiant(const Estudiant& est, bool& b);
+  /* Pre: el par`ametre impl ́ıcit no est`a ple */
+  /* Post: b indica si el par`ametre impl ́ıcit original cont ́e un estudiant amb el
+   dni d’est; si b=fals, s’ha afegit l’estudiant est al par`ametre impl ́ıcit */
+  
+  void modificar_estudiant(const Estudiant& est, bool& b);
+  /* Pre: cert  */
+  /* Post: b indica si l'estudiant ha estat substituit o no, degut a si hi era al 
+     conjunto o no. Si b == true, l'estudiant del parametre implicit original amb 
+     el dni d'est, ha quedat substituit per est */
     
   void modificar_iessim(int i, const Estudiant& est);
   /* Pre: 1 <= i <= nombre d'estudiants del parametre implicit,
@@ -78,12 +79,13 @@ public:
     
   bool existeix_estudiant(int dni) const;
   /* Pre: dni >= 0 */
-  /* Post: el resultat indica si existeix un estudiant al par�metre implicit
+  /* Post: el resultat indica si existeix un estudiant al par‡metre implicit
      amb DNI = dni */
     
-  Estudiant consultar_estudiant(int dni) const;
-  /* Pre: existeix un estudiant al parametre impl�cit amb DNI = dni */
-  /* Post: el resultat es l'estudiant amb DNI = dni que conte el
+  void consultar_estudiant(Estudiant &est, bool &b) const;
+  /* Pre: cert */
+  /* Post: b indica si l'estudiant s'ha trobat o no dins del conjunt. 
+     Si b == true, el resultat es l'estudiant amb DNI = dni que conte el
      parametre implicit */
     
   Estudiant consultar_iessim(int i) const;
