@@ -1,4 +1,0 @@
-La sintaxis de la entrada es la misma que en la version original, salvo
-que hay que introducir el maximo id de las celulas al principio de todo.
-
-En el caso del fichero entrada.txt dicho valor es 10.
