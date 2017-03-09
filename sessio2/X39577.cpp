@@ -43,7 +43,7 @@ int main (){
       double nota;
       cin >> nota;
       m[i][j] = Estudiant(dni);
-      m[i][j].Estudiant::afegir_nota(nota);
+      m[i][j].afegir_nota(nota);
       
       // Sumar nota a la nota media
       if(vAsigSeleccionadas[j]){
@@ -54,11 +54,11 @@ int main (){
     // Dividir nota media entre las asignaturas y guardar en el vector
     notaMedia /= SasigSeleccionadas;
     vMedias[i] = Estudiant(dni);
-    vMedias[i].Estudiant::afegir_nota(notaMedia);
+    vMedias[i].afegir_nota(notaMedia);
   }
   
   // Imprimir
   for(int i = 0; i < Mestudiantes; ++i){
-    vMedias[i].Estudiant::escriure();
+    vMedias[i].escriure();
   }
 }
