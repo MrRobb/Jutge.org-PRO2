@@ -76,12 +76,8 @@ Estudiant Cjt_estudiants::consultar_iessim(int i) const {
   return vest[i-1];
 }
 
-bool comp(const Estudiant& e1, const Estudiant& e2){
-  return (e1.consultar_DNI() < e2.consultar_DNI());
-}
-
 void Cjt_estudiants::ordenar_cjt_estudiants() {
-  sort(vest.begin(),vest.begin()+nest,comp);
+  sort(vest.begin(),vest.begin()+nest,Estudiant::comp);
 }
 
 void Cjt_estudiants::llegir() {

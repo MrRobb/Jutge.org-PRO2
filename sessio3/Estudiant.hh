@@ -61,6 +61,8 @@ public:
   double consultar_nota() const;
   /* Pre: el parametre implicit te nota */
   /* Post: el resultat es la nota del parametre implicit */
+  
+  static bool comp(const Estudiant& e1, const Estudiant& e2);
     
   static double nota_maxima();
   /* Pre: cert */

@@ -24,9 +24,7 @@ Estudiant::Estudiant(const Estudiant& est){
   (*this).nota = est.nota;
 }
 
-Estudiant::~Estudiant(){
-  cout << "Se ha eliminado un estudiante." << endl;
-}
+Estudiant::~Estudiant(){}
 
 void Estudiant::afegir_nota(double nota)
 {
@@ -61,6 +59,10 @@ double Estudiant::consultar_nota() const
 int Estudiant::consultar_DNI() const
 {
   return dni;
+}
+
+bool Estudiant::comp(const Estudiant& e1, const Estudiant& e2){
+  return (e1.consultar_DNI() < e2.consultar_DNI());
 }
 
 double Estudiant::nota_maxima()
