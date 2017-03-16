@@ -17,7 +17,7 @@ void Cjt_estudiants::afegir_estudiant(const Estudiant &est, bool& b)
 {
   int dni = est.consultar_DNI();
   int pos = cerca_dicot(vest, 0, nest-1, dni);
-  if(vest[pos].consultar_DNI() != est.consultar_DNI()){
+  if(vest[pos].consultar_DNI() != dni){
     b = false;
     
     for(int i = nest-1; i >= pos; --i){
@@ -27,16 +27,16 @@ void Cjt_estudiants::afegir_estudiant(const Estudiant &est, bool& b)
     ++nest;
     vest[pos] = est;
     
-    int nota = -1;
     if(est.te_nota()){
-      nota = est.consultar_nota();
+      int nota = est.consultar_nota();
+      if(nota == 10){
+        ++intervals[9];
+      } else {
+        ++intervals[int(nota)];
+      }
     }
     
-    if(nota == 10){
-      ++intervals[9];
-    } else if(nota != -1){
-      ++intervals[int(nota)];
-    }
+    
   } else {
     b = true;
   }
@@ -55,15 +55,13 @@ void Cjt_estudiants::esborrar_estudiant(int dni, bool& b)
       if(nota == 10){
         --intervals[9];
       } else {
-        --intervals[int(nota)];
+        --intervals[nota];
       }
     }
     
     // Borrar estudiante
-    vest[i] = vest[nest-1];
+    for(int j = i; j < nest; ++j) vest[j] = vest[j+1];
     --nest;
-    
-    sort(vest.begin(), vest.begin()+nest, comp);
     
   } else {
     b = false;
