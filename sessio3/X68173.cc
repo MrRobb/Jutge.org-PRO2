@@ -22,9 +22,10 @@ void Cjt_estudiants::afegir_estudiant(const Estudiant& est) {
     }
   }
   // i es la posicio mes avancada amb el DNI mes petit que dni, si n'hi ha;
-  // si no, i=-1 
+  // si no, i=-1
   vest[i+1] = est;
   ++nest;
+  
   recalcular_posicio_imax();
 }
 
@@ -128,8 +129,14 @@ void Cjt_estudiants::llegir() {
   if (nest > MAX_NEST) throw PRO2Excepcio("El conjunt no pot ser mes gran que la mida maxima");
   for (int i = 0; i < nest; ++i)
     vest[i].llegir();
+  
   ordenar_cjt_estudiants();
   recalcular_posicio_imax();
+  /* Si añadimos dentro del loop la función, aunque puedas quitar casos y se haga más eficiente,
+     si añadimos más condiciones y operaciones mientras el usuario está introduciendo los datos, 
+     el usuario notará lento el programa. En cambio, si lo añadimos al final, la experiencia de
+     de introducir datos será más fluida.
+   */
 }
 
 void Cjt_estudiants::escriure() const {
