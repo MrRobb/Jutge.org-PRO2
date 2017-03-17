@@ -7,7 +7,7 @@ using namespace std;
 
 void llegirPilaParInt(stack<Estudiant>& p){
   Estudiant est;
-  while(est.consultar_DNI() != 0){
+  while(est.llegir() and est.consultar_DNI() != 0){
     p.push(est);
   }
 }
