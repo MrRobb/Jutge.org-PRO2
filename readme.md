@@ -1,7 +1,7 @@
 # LOGS [10/03/2017]
 
 ## SESIÓN 1
-Terminada salvo el último ejercicio del .pdf (Lo terminaré el 10/03/2017).
+Terminada.
 
 ## SESIÓN 2
 Terminada.
@@ -10,7 +10,10 @@ Terminada.
 Terminada.
 
 ## SESIÓN 4
-Terminado el primer ejercicio (Estará terminada el 12/03/2017).
+Terminada.
+
+## SESIÓN 5
+Terminada.
 
 
 # Descripción del material de la carpeta /assig/pro2:
