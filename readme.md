@@ -15,6 +15,12 @@ Terminada.
 ## SESIÓN 5
 Terminada.
 
+## SESIÓN 6
+Terminada.
+
+## SESIÓN 7
+Terminada.
+
 
 # Descripción del material de la carpeta /assig/pro2:
 
@@ -24,7 +30,7 @@ práctica
 objectes: ficheros para linkar con los programas de algunas sesiones
 del laboratorio
 
-sessio*: carpetas con los ficheros de cada sesión
+sessio\*: carpetas con los ficheros de cada sesión
 
 zips: carpetas comprimidas con los ficheros de cada sesión (para
 descargar via web, por ejemplo)
