@@ -39,7 +39,7 @@ OPCIONS = -D_JUDGE_ -D_GLIBCXX_DEBUG -O2 -Wall -Wextra -Werror -Wno-uninitialize
 # se obtiene con el g++ -o ... (el tabulador antes de g++ es necesario)
 #
 pro2_s8.exe: pro2_s8.o 
-	g++ -o pro2_s8.exe pro2_s8.o /Users/Roberto/Documents/School/Universidad/Year1/Q2/PRO2/Jutge.org-PRO2/objectes/{Cubeta.o,Prenda.o,Lavadora.o}
+	g++ -o pro2_s8.exe pro2_s8.o $(OBJECTES){Cubeta.o,Prenda.o,Lavadora.o}
 #
 # La siguiente instruccion significa:
 # para obtener pro2_s8.o es necesario que exista pro2_s8.cc;
@@ -47,7 +47,7 @@ pro2_s8.exe: pro2_s8.o
 # se obtiene con el g++ -c ... 
 #
 pro2_s8.o: pro2_s8.cc
-	g++ -c pro2_s8.cc $(OPCIONS) -I$ /Users/Roberto/Documents/School/Universidad/Year1/Q2/PRO2/Jutge.org-PRO2/inclusions
+	g++ -c pro2_s8.cc $(OPCIONS) -I$(INCLUSIONS)
 #
 # Realizad las modificaciones necesarias para gestionar las clases de la
 # sesión cuando os toque implementarlas a vosotros.
