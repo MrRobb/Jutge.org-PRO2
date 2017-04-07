@@ -7,7 +7,7 @@
 #define _PRENDA_HH_
 
 #ifndef NO_DIAGRAM          // esto hace que el Doxyfile de la sesión no 
-#include "PRO2Excepcio.hh"  // incluya estas clases en los diagramas modulares, 
+#include "PRO2Excepcio.hh"  // incluya estas clases en los diagramas modulares,
 #include <iostream>         // mientras que el compilador de c++ 
 #endif                      // sí que las procesa correctamente  
 
